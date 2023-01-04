@@ -1,0 +1,59 @@
+The following report aims to give a detailed explanation of the solutions of the 5 problems proposed in the assignment.
+The problems considered a scenario where one or more robots have to deliver emergency supplies to injured people located in space.
+These were the initial explicit assumptions:
+\begin{itemize}
+    \item Each injured person is at a specific location, and does not move.
+    \item Each box is initially at a specific location and can be filled with a specific content if empty. Box contents shall be modeled in a generic way, so that new contents can easily be introduced in the problem instance.
+    \item Each person either has or does not have a box with a specific content.
+    \item There can be more than one person at any given location.
+    \item The robotic agents can move directly between arbitrary locations.
+    \item We want to be able to expand this domain for multiple robotic agents in the future.
+\end{itemize}  
+While the suggested actions were the following:
+\begin{itemize}
+    \item Fill a box with a content. Robot box and content must be in the same place, box must be empty.
+    \item Empty a box, satisfying the person at that specific location.
+    \item Pick up a box located in the same place as the robot.
+    \item Move to another location.
+    \item Deliver a box.
+\end{itemize}
+
+Based on these assumptions here is the formulated solution used in all problems.
+We considered 5 main types:
+\begin{itemize}
+    \item Robot
+    \item Person
+    \item Location
+    \item Box
+    \item Content
+\end{itemize}
+and 5 main actions:
+\begin{itemize}
+    \item Fill 
+    \item Empty
+    \item Load
+    \item Move
+    \item Unload
+\end{itemize}
+
+The main workflow the robot follow to satify a person is to \textbf{fill} a box with a content,
+\textbf{load} the box on itself and \textbf{move} carrying the box toward the destination.
+Once it gets where the person is located it \textbf{unloads} the box and \textbf{empties} it giving the content to the person.
+After that the robot needs to restart in order to satisfy another person, so it can re-use the same box as before and carry it to the place where the supplies are stored, or look for another box.
+We assume the supplies are infinite where stored, but only one portion can fit in a box, so if 2 people need the same supply the robot must re-fill with it.
+\\
+For doing so the folllowing informations are needed:
+\begin{itemize}
+    \item Where a robot is (\textbf{robot-at}).
+    \item If a robot is carrying a box(\textbf{robot-loaded}).
+    \item Which box a robot is carrying (\textbf{robot-has}).
+    \item If a box is full (\textbf{box-full}).
+    \item Where a box is (\textbf{box-at}).
+    \item What is the content of a box (\textbf{box-contains}).
+    \item Where a supply is stored (\textbf{content-at}); specified in the initial assumptions of the problem and fixed.
+    \item Where a person is (\textbf{person-at}); specified in the initial assumptions of the problem and fixed.
+    \item What supply a person has (\textbf{person-has}); which represent the goal.
+\end{itemize}
+For all problems we used \textbf{negative preconditions} since the predicates make more sense this way and it is supported by almost every planner.
+We also made a version without \textbf{negative precondition} that has very few differences, it is sufficient to use \textbf{box-empty} and \textbf{robot-unloaded} and remove the negated preconditions from the \textbf{move} action. 
+Notice that this configuration ensure there are no constraints on the number of robots or boxes in order to satisfy any number of people.

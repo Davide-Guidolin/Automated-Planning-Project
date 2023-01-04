@@ -3,7 +3,7 @@
     robot1                                              - robot
     person1 person2 person3 person4 person5 person6     - person
     depot loc1 loc2 loc3 loc4 loc5 loc6 loc7            - location
-    box1 box2 box3 box4                                 - box
+    box1 box2 box3 box4 box                             - box
     xanax bendage banana pizza hammer                   - content
     carrier1                                            - carrier
     capacity_0                                          - capacity_number

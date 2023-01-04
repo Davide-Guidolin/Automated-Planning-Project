@@ -1,0 +1,22 @@
+The second problem required to think about the \textbf{move} action in a different persective, 
+ensuring that a robot can load the boxes on a carrier instead of itself, and that the carrier can be transported by a robot to the destinations.\\
+The solution we developed are two, the first one is simpler since it only has an additional type \textbf{carrier} and its \textbf{capacity} is represented through a function.
+The initial capacity of each carrier can be specified in the problem, and it is managed through the usage of fluents: \textbf{load} can be performed only if the capacity is greater than 0, and the effect is to decrement it, the opposite for \textbf{unload}.\\
+Another solution has been implemented since the first one relies on the \textbf{fluents} requirement, which is not supported by many planner we used.
+We took inspiration by an example provided during the lab session, in which each a new type called \textbf{capacity-number} is used to described all the possible capacities.
+Then for each \textbf{load} and \textbf{unload} operation done on the carrier is important not to forget to specify the precondition \textbf{capacity-predecessor} through which we ensure the numbers we use to upload the capacity are consequent.
+The order of the capacity is specified in the problem as follows:
+\begin{verbatim}
+    (capacity_predecessor capacity_0 capacity_1)
+    (capacity_predecessor capacity_1 capacity_2)
+    (capacity_predecessor capacity_2 capacity_3)
+    (capacity_predecessor capacity_3 capacity_4)
+\end{verbatim}
+Plus the initial capacity of each carrier (4 as requested):
+\begin{verbatim}
+    (capacity carrier1 capacity_4)
+\end{verbatim}
+Finally the last modification with respect to the first problem is the \textbf{move} action, which no longer allow a robot to carry a box, but a carrier instead.
+Thanks to this any robot can carry any carrier, even if loaded by another robot.\\
+To test it with a more complex environment we increased the number of people to 6, the boxes to 5, the locations to 8 and the supplies to 5, the robot and the carrier are just one each, as requested in the assignement.
+Of course there are no constraints neither in the number of robots nor of carriers.

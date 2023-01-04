@@ -3,7 +3,7 @@
     robot1                                              - robot
     person1 person2 person3 person4 person5 person6     - person
     depot loc1 loc2 loc3 loc4 loc5 loc6 loc7            - location
-    box1 box2 box3 box4                                 - box
+    box1 box2 box3 box4 box5                            - box
     xanax bendage banana pizza hammer                   - content
     carrier1                                            - carrier
     capacity_0                                          - capacity_number
@@ -17,12 +17,6 @@
 (:htn
 		:parameters ()
 		:subtasks (and
-		; (task0 (get_content robot1 hammer)) 
-		; (task1 (delivery robot1 person1 hammer))
-		; (task2 (get_content robot1 banana)) 
-		; (task3 (delivery robot1 person2 banana))
-		; (task4 (get_content robot1 xanax)) 
-		; (task5 (delivery robot1 person3 xanax))
          (task1 (satisfy person2 banana))
          (task2 (satisfy person3 xanax))
          (task3 (satisfy person3 hammer))
@@ -54,7 +48,7 @@
     (box-at box2 depot)
     (box-at box3 depot)
     (box-at box4 depot)
-    ; (box-at box5 depot)
+    (box-at box5 depot)
     (content-at xanax depot)
     (content-at bendage depot)
     (content-at banana depot)
@@ -65,15 +59,4 @@
     (capacity_predecessor capacity_2 capacity_3)
     (capacity_predecessor capacity_3 capacity_4)
     )
-
-; (:goal (and
-;     (person-has person1 hammer)
-;     (person-has person2 banana)
-;     (person-has person3 xanax)
-;     (person-has person3 hammer)
-;     (person-has person5 bendage)
-;     (person-has person6 bendage)
-;     (person-has person6 pizza)
-;     (person-has person6 xanax)
-; ))
 )

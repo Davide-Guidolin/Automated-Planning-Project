@@ -20,7 +20,6 @@
 )
 
 (:goal (and
-    (person-has person1 tool)
     (person-has person2 medicine)
     (person-has person3 food)
     (person-has person3 medicine)
