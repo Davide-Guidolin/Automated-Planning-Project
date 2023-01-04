@@ -7,10 +7,10 @@ We took inspiration by an example provided during the lab session, in which each
 Then for each \textbf{load} and \textbf{unload} operation done on the carrier is important not to forget to specify the precondition \textbf{capacity-predecessor} through which we ensure the numbers we use to upload the capacity are consequent.
 The order of the capacity is specified in the problem as follows:
 \begin{verbatim}
-    (capacity_predecessor capacity_0 capacity_1)
-    (capacity_predecessor capacity_1 capacity_2)
-    (capacity_predecessor capacity_2 capacity_3)
-    (capacity_predecessor capacity_3 capacity_4)
+(capacity_predecessor capacity_0 capacity_1)
+(capacity_predecessor capacity_1 capacity_2)
+(capacity_predecessor capacity_2 capacity_3)
+(capacity_predecessor capacity_3 capacity_4)
 \end{verbatim}
 Plus the initial capacity of each carrier (4 as requested):
 \begin{verbatim}
@@ -20,3 +20,4 @@ Finally the last modification with respect to the first problem is the \textbf{m
 Thanks to this any robot can carry any carrier, even if loaded by another robot.\\
 To test it with a more complex environment we increased the number of people to 6, the boxes to 5, the locations to 8 and the supplies to 5, the robot and the carrier are just one each, as requested in the assignement.
 Of course there are no constraints neither in the number of robots nor of carriers.
+From this point on, all next problems are solved using solution 2 described above as base.
