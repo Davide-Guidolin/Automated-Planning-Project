@@ -1,1 +1,28 @@
-For solving problem 4 we were asked to 
+For solving problem 4 we were asked to use durative actions.
+The chosen duration are the following:
+\begin{itemize}
+    \item Fill: 5
+    \item Load: 4
+    \item Move: 10
+    \item Unload: 2
+    \item Empty: 3
+\end{itemize}
+We considered the robots to have one arm, this means it cannot load several boxes at the same time, or loading and filling as well as unloading and emptying at the same time.\\
+The only case possible where a robot could make two actions in parallel are if it starts unloading a box from the carrier while still moving.
+To manage the possibility and not possibility to parallelize actions the predicates \textbf{busy} has been added.
+It refers to a robot and is used to understand when the successive action can begin.
+In fact all the non-parallel actions have the same effects:
+\begin{verbatim}
+and     (at start (busy ?r))
+        (at end (not (busy ?r))
+        ...
+\end{verbatim}
+and the same precondition:
+\begin{verbatim}
+and     (at start (not(busy ?r)))
+        ...
+\end{verbatim}
+The actions \textbf{empty}, \textbf{fill} and \textbf{load} have as precondition $(over all (robot-at ?r ?x))$
+meaning that for all the execution of that action the robot must be at that location. \\
+The \textbf{unload} action instead has as precondition $(at end(robot-at ?r ?x))$ which means that we only need to be at the right location
+when the box touches the ground, so when the action \textbf{unload} ends.
