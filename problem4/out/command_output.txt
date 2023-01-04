@@ -1,0 +1,310 @@
+Parsing...
+Contains quantified condition(s): False
+Instantiating...
+Trivial rules: Converted to facts.
+Starting instantiation [53 rules]...
+Finding invariants...
+Finding invariants... 25 initial candidates
+[0.000s CPU, 0.007s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups...
+Choosing groups...
+112 uncovered facts (before using the results from the invariant synthesis)
+55 uncovered facts
+Building translation key...
+Building STRIPS to SAS dictionary...
+Translating task...
+Processing axioms...
+Found 0 axioms that are always true and 0 that are always false
+constrained 692 conditions
+Writing output...
+Done!
+contains_quantified_conditions: 0
+Building causal graph...
+The causal graph is not acyclic.
+67 variables of 67 necessary
+452 of 452 operators necessary.
+0 of 0 Axiom_relational rules necessary.
+0 of 0 Axiom_functional rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+all_operator_indices.size(): 452
+Writing output...
+printing SG 
+67
+done
+
+
+Planner Paramters:
+Anytime Search: Disabled
+Timeout if plan was found: 0 seconds (no timeout)
+Timeout while no plan was found: 0 seconds (no timeout)
+Greedy Search: Disabled
+Verbose: Enabled
+Lazy Heuristic Evaluation: Enabled
+Use caching in heuristic.
+Cyclic CG heuristic: Enabled 	Preferred Operators: Enabled
+Makespan heuristic: Disabled 	Preferred Operators: Disabled
+No Heuristic: Disabled
+Cg Heuristic Zero Cost Waiting Transitions: Enabled
+Cg Heuristic Fire Waiting Transitions Only If Local Problems Matches State: Disabled
+PrefOpsOrderedMode: Enabled with 1 goals
+PrefOpsCheapestMode: Enabled with 1 goals
+PrefOpsMostExpensiveMode: Disabled with 1000 goals
+PrefOpsRandMode: Disabled with 1000 goals
+PrefOpsConcurrentMode: Disabled
+Reset after solution was found: Enabled
+Reward only preferred operators queue: Disabled
+GValues by: Timestamp
+Queue management mode: Priority based
+Known by logical state only filtering: Disabled
+use_subgoals_to_break_makespan_ties: Disabled
+Reschedule plans: Enabled
+Epsilonize internally: Enabled
+Epsilonize externally: Disabled
+Keep original plans: Enabled
+Plan name: "./output_plan"
+Plan monitor file: "" (no monitoring)
+Monitoring verify timestamps: Disabled
+
+Contains universal conditions: 0
+Giving prior boost to open list 0
+INIT
+Open list sizes (priorities): 0 (-5000),  0 (0),  0 (0),  0 (0), 
+Initializing cyclic causal graph heuristic...done.
+Best heuristic values of queues: 352/-1/-1/-1 [expanded 1 state(s)]
+Best heuristic values of queues: 346.98/-1/-1/-1 [expanded 2 state(s)]
+Best heuristic values of queues: 342/-1/-1/-1 [expanded 3 state(s)]
+Best heuristic values of queues: 337.98/-1/-1/-1 [expanded 4 state(s)]
+Best heuristic values of queues: 334/-1/-1/-1 [expanded 5 state(s)]
+Best heuristic values of queues: 317.98/-1/-1/-1 [expanded 85 state(s)]
+Best heuristic values of queues: 308/-1/-1/-1 [expanded 86 state(s)]
+Best heuristic values of queues: 307.98/-1/-1/-1 [expanded 87 state(s)]
+Best heuristic values of queues: 303/-1/-1/-1 [expanded 88 state(s)]
+Best heuristic values of queues: 297.98/-1/-1/-1 [expanded 89 state(s)]
+Best heuristic values of queues: 294/-1/-1/-1 [expanded 90 state(s)]
+Best heuristic values of queues: 273.98/-1/-1/-1 [expanded 108 state(s)]
+Best heuristic values of queues: 264/-1/-1/-1 [expanded 109 state(s)]
+Best heuristic values of queues: 263.98/-1/-1/-1 [expanded 110 state(s)]
+Best heuristic values of queues: 259/-1/-1/-1 [expanded 111 state(s)]
+Best heuristic values of queues: 255.98/-1/-1/-1 [expanded 112 state(s)]
+Best heuristic values of queues: 252/-1/-1/-1 [expanded 113 state(s)]
+Best heuristic values of queues: 219.98/-1/-1/-1 [expanded 133 state(s)]
+Best heuristic values of queues: 210/-1/-1/-1 [expanded 134 state(s)]
+Best heuristic values of queues: 205.98/-1/-1/-1 [expanded 141 state(s)]
+Best heuristic values of queues: 202/-1/-1/-1 [expanded 142 state(s)]
+Best heuristic values of queues: 185.98/-1/-1/-1 [expanded 158 state(s)]
+Best heuristic values of queues: 176/-1/-1/-1 [expanded 159 state(s)]
+Best heuristic values of queues: 171.98/-1/-1/-1 [expanded 161 state(s)]
+Best heuristic values of queues: 168/-1/-1/-1 [expanded 162 state(s)]
+Best heuristic values of queues: 135.98/-1/-1/-1 [expanded 184 state(s)]
+Best heuristic values of queues: 126/-1/-1/-1 [expanded 185 state(s)]
+Best heuristic values of queues: 111.98/-1/-1/-1 [expanded 188 state(s)]
+Best heuristic values of queues: 109.99/-1/-1/-1 [expanded 189 state(s)]
+Best heuristic values of queues: 108.98/-1/-1/-1 [expanded 218 state(s)]
+Best heuristic values of queues: 99/-1/-1/-1 [expanded 219 state(s)]
+Best heuristic values of queues: 98.98/-1/-1/-1 [expanded 220 state(s)]
+Best heuristic values of queues: 97/-1/-1/-1 [expanded 221 state(s)]
+Best heuristic values of queues: 90.98/-1/-1/-1 [expanded 222 state(s)]
+Best heuristic values of queues: 88/-1/-1/-1 [expanded 223 state(s)]
+Best heuristic values of queues: 87.98/-1/-1/-1 [expanded 224 state(s)]
+Best heuristic values of queues: 84/-1/-1/-1 [expanded 225 state(s)]
+Best heuristic values of queues: 77.98/-1/-1/-1 [expanded 226 state(s)]
+Best heuristic values of queues: 75.99/-1/-1/-1 [expanded 231 state(s)]
+Best heuristic values of queues: 61.98/-1/-1/-1 [expanded 247 state(s)]
+Best heuristic values of queues: 52/-1/-1/-1 [expanded 248 state(s)]
+Best heuristic values of queues: 51.98/-1/-1/-1 [expanded 249 state(s)]
+Best heuristic values of queues: 50/-1/-1/-1 [expanded 250 state(s)]
+Best heuristic values of queues: 46.98/-1/-1/-1 [expanded 251 state(s)]
+Best heuristic values of queues: 44/-1/-1/-1 [expanded 252 state(s)]
+Best heuristic values of queues: 43.98/-1/-1/-1 [expanded 254 state(s)]
+Best heuristic values of queues: 42/-1/-1/-1 [expanded 256 state(s)]
+Best heuristic values of queues: 41.99/-1/-1/-1 [expanded 260 state(s)]
+Best heuristic values of queues: 39/-1/-1/-1 [expanded 269 state(s)]
+Best heuristic values of queues: 38.98/-1/-1/-1 [expanded 272 state(s)]
+Best heuristic values of queues: 35/-1/-1/-1 [expanded 273 state(s)]
+Best heuristic values of queues: 28.98/-1/-1/-1 [expanded 274 state(s)]
+Best heuristic values of queues: 14.98/-1/-1/-1 [expanded 276 state(s)]
+Best heuristic values of queues: 5/-1/-1/-1 [expanded 277 state(s)]
+Best heuristic values of queues: 4.98/-1/-1/-1 [expanded 278 state(s)]
+Best heuristic values of queues: 3/-1/-1/-1 [expanded 279 state(s)]
+Best heuristic values of queues: 0/-1/-1/-1 [expanded 281 state(s)]
+New solution has been found.
+
+Found new plan:
+0.00000000: (fill robot1 box1 hammer depot) [5.00000000]
+5.01000000: (load robot1 depot box1 carrier1 capacity_3 capacity_4) [4.00000000]
+9.02000000: (move robot1 carrier1 depot loc1) [10.00000000]
+19.03000000: (unload robot1 loc1 box1 carrier1 capacity_3 capacity_4) [2.00000000]
+21.04000000: (empty robot1 loc1 box1 hammer person1) [3.00000000]
+24.05000000: (move robot1 carrier1 loc1 depot) [10.00000000]
+34.06000000: (fill robot1 box4 banana depot) [5.00000000]
+39.07000000: (load robot1 depot box4 carrier1 capacity_3 capacity_4) [4.00000000]
+43.08000000: (move robot1 carrier1 depot loc3) [10.00000000]
+53.09000000: (unload robot1 loc3 box4 carrier1 capacity_3 capacity_4) [2.00000000]
+55.10000000: (empty robot1 loc3 box4 banana person2) [3.00000000]
+58.11000000: (move robot1 carrier1 loc3 depot) [10.00000000]
+68.12000000: (fill robot1 box3 hammer depot) [5.00000000]
+73.13000000: (load robot1 depot box3 carrier1 capacity_3 capacity_4) [4.00000000]
+77.14000000: (move robot1 carrier1 depot loc4) [10.00000000]
+87.15000000: (unload robot1 loc4 box3 carrier1 capacity_3 capacity_4) [2.00000000]
+89.16000000: (empty robot1 loc4 box3 hammer person3) [3.00000000]
+92.17000000: (load robot1 loc4 box3 carrier1 capacity_3 capacity_4) [4.00000000]
+96.18000000: (move robot1 carrier1 loc4 depot) [10.00000000]
+106.19000000: (unload robot1 depot box3 carrier1 capacity_3 capacity_4) [2.00000000]
+108.20000000: (fill robot1 box3 xanax depot) [5.00000000]
+113.21000000: (load robot1 depot box3 carrier1 capacity_3 capacity_4) [4.00000000]
+117.22000000: (move robot1 carrier1 depot loc4) [10.00000000]
+127.23000000: (unload robot1 loc4 box3 carrier1 capacity_3 capacity_4) [2.00000000]
+129.24000000: (empty robot1 loc4 box3 xanax person3) [3.00000000]
+132.25000000: (move robot1 carrier1 loc4 loc2) [10.00000000]
+142.26000000: (move robot1 carrier1 loc2 depot) [10.00000000]
+152.27000000: (fill robot1 box2 bendage depot) [5.00000000]
+157.28000000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+161.29000000: (move robot1 carrier1 depot loc2) [10.00000000]
+171.30000000: (unload robot1 loc2 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+173.31000000: (empty robot1 loc2 box2 bendage person5) [3.00000000]
+176.32000000: (load robot1 loc2 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+180.33000000: (move robot1 carrier1 loc2 depot) [10.00000000]
+190.34000000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+192.35000000: (fill robot1 box2 bendage depot) [5.00000000]
+197.36000000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+201.37000000: (move robot1 carrier1 depot loc6) [10.00000000]
+211.38000000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+213.39000000: (empty robot1 loc6 box2 bendage person6) [3.00000000]
+216.40000000: (load robot1 loc6 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+220.41000000: (move robot1 carrier1 loc6 depot) [10.00000000]
+230.42000000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+232.43000000: (fill robot1 box2 pizza depot) [5.00000000]
+237.44000000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+241.45000000: (move robot1 carrier1 depot loc6) [10.00000000]
+251.46000000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+253.47000000: (empty robot1 loc6 box2 pizza person6) [3.00000000]
+256.48000000: (load robot1 loc6 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+260.49000000: (move robot1 carrier1 loc6 depot) [10.00000000]
+270.50000000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+272.51000000: (fill robot1 box2 xanax depot) [5.00000000]
+277.52000000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+281.53000000: (move robot1 carrier1 depot loc6) [10.00000000]
+291.54000000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+293.55000000: (empty robot1 loc6 box2 xanax person6) [3.00000000]
+Rescheduled Plan:
+0.00100000: (fill robot1 box1 hammer depot) [5.00000000]
+5.01100000: (load robot1 depot box1 carrier1 capacity_3 capacity_4) [4.00000000]
+9.02100000: (move robot1 carrier1 depot loc1) [10.00000000]
+17.03100000: (unload robot1 loc1 box1 carrier1 capacity_3 capacity_4) [2.00000000]
+19.04100000: (empty robot1 loc1 box1 hammer person1) [3.00000000]
+22.05100000: (move robot1 carrier1 loc1 depot) [10.00000000]
+32.06100000: (fill robot1 box4 banana depot) [5.00000000]
+37.07100000: (load robot1 depot box4 carrier1 capacity_3 capacity_4) [4.00000000]
+41.08100000: (move robot1 carrier1 depot loc3) [10.00000000]
+49.09100000: (unload robot1 loc3 box4 carrier1 capacity_3 capacity_4) [2.00000000]
+51.10100000: (empty robot1 loc3 box4 banana person2) [3.00000000]
+54.11100000: (move robot1 carrier1 loc3 depot) [10.00000000]
+64.12100000: (fill robot1 box3 hammer depot) [5.00000000]
+69.13100000: (load robot1 depot box3 carrier1 capacity_3 capacity_4) [4.00000000]
+73.14100000: (move robot1 carrier1 depot loc4) [10.00000000]
+81.15100000: (unload robot1 loc4 box3 carrier1 capacity_3 capacity_4) [2.00000000]
+83.16100000: (empty robot1 loc4 box3 hammer person3) [3.00000000]
+86.17100000: (load robot1 loc4 box3 carrier1 capacity_3 capacity_4) [4.00000000]
+90.18100000: (move robot1 carrier1 loc4 depot) [10.00000000]
+98.19100000: (unload robot1 depot box3 carrier1 capacity_3 capacity_4) [2.00000000]
+100.20100000: (fill robot1 box3 xanax depot) [5.00000000]
+105.21100000: (load robot1 depot box3 carrier1 capacity_3 capacity_4) [4.00000000]
+109.22100000: (move robot1 carrier1 depot loc4) [10.00000000]
+117.23100000: (unload robot1 loc4 box3 carrier1 capacity_3 capacity_4) [2.00000000]
+119.24100000: (empty robot1 loc4 box3 xanax person3) [3.00000000]
+122.25100000: (move robot1 carrier1 loc4 loc2) [10.00000000]
+132.26100000: (move robot1 carrier1 loc2 depot) [10.00000000]
+142.27100000: (fill robot1 box2 bendage depot) [5.00000000]
+147.28100000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+151.29100000: (move robot1 carrier1 depot loc2) [10.00000000]
+159.30100000: (unload robot1 loc2 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+161.31100000: (empty robot1 loc2 box2 bendage person5) [3.00000000]
+164.32100000: (load robot1 loc2 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+168.33100000: (move robot1 carrier1 loc2 depot) [10.00000000]
+176.34100000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+178.35100000: (fill robot1 box2 bendage depot) [5.00000000]
+183.36100000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+187.37100000: (move robot1 carrier1 depot loc6) [10.00000000]
+195.38100000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+197.39100000: (empty robot1 loc6 box2 bendage person6) [3.00000000]
+200.40100000: (load robot1 loc6 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+204.41100000: (move robot1 carrier1 loc6 depot) [10.00000000]
+212.42100000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+214.43100000: (fill robot1 box2 pizza depot) [5.00000000]
+219.44100000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+223.45100000: (move robot1 carrier1 depot loc6) [10.00000000]
+231.46100000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+233.47100000: (empty robot1 loc6 box2 pizza person6) [3.00000000]
+236.48100000: (load robot1 loc6 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+240.49100000: (move robot1 carrier1 loc6 depot) [10.00000000]
+248.50100000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+250.51100000: (fill robot1 box2 xanax depot) [5.00000000]
+255.52100000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+259.53100000: (move robot1 carrier1 depot loc6) [10.00000000]
+267.54100000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+269.55100000: (empty robot1 loc6 box2 xanax person6) [3.00000000]
+Solution with original makespan 296.55 found (ignoring no-moving-targets-rule).
+Plan length: 56 step(s).
+Makespan   : 272.551
+Rescheduled Makespan   : 272.551
+Search time: 0.05 seconds - Walltime: 0.0597129 seconds
+Total time: 0.06 seconds - Walltime: 0.0732899 seconds
+0.00100000: (fill robot1 box1 hammer depot) [5.00000000]
+5.01100000: (load robot1 depot box1 carrier1 capacity_3 capacity_4) [4.00000000]
+9.02100000: (move robot1 carrier1 depot loc1) [10.00000000]
+17.03100000: (unload robot1 loc1 box1 carrier1 capacity_3 capacity_4) [2.00000000]
+19.04100000: (empty robot1 loc1 box1 hammer person1) [3.00000000]
+22.05100000: (move robot1 carrier1 loc1 depot) [10.00000000]
+32.06100000: (fill robot1 box4 banana depot) [5.00000000]
+37.07100000: (load robot1 depot box4 carrier1 capacity_3 capacity_4) [4.00000000]
+41.08100000: (move robot1 carrier1 depot loc3) [10.00000000]
+49.09100000: (unload robot1 loc3 box4 carrier1 capacity_3 capacity_4) [2.00000000]
+51.10100000: (empty robot1 loc3 box4 banana person2) [3.00000000]
+54.11100000: (move robot1 carrier1 loc3 depot) [10.00000000]
+64.12100000: (fill robot1 box3 hammer depot) [5.00000000]
+69.13100000: (load robot1 depot box3 carrier1 capacity_3 capacity_4) [4.00000000]
+73.14100000: (move robot1 carrier1 depot loc4) [10.00000000]
+81.15100000: (unload robot1 loc4 box3 carrier1 capacity_3 capacity_4) [2.00000000]
+83.16100000: (empty robot1 loc4 box3 hammer person3) [3.00000000]
+86.17100000: (load robot1 loc4 box3 carrier1 capacity_3 capacity_4) [4.00000000]
+90.18100000: (move robot1 carrier1 loc4 depot) [10.00000000]
+98.19100000: (unload robot1 depot box3 carrier1 capacity_3 capacity_4) [2.00000000]
+100.20100000: (fill robot1 box3 xanax depot) [5.00000000]
+105.21100000: (load robot1 depot box3 carrier1 capacity_3 capacity_4) [4.00000000]
+109.22100000: (move robot1 carrier1 depot loc4) [10.00000000]
+117.23100000: (unload robot1 loc4 box3 carrier1 capacity_3 capacity_4) [2.00000000]
+119.24100000: (empty robot1 loc4 box3 xanax person3) [3.00000000]
+122.25100000: (move robot1 carrier1 loc4 loc2) [10.00000000]
+132.26100000: (move robot1 carrier1 loc2 depot) [10.00000000]
+142.27100000: (fill robot1 box2 bendage depot) [5.00000000]
+147.28100000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+151.29100000: (move robot1 carrier1 depot loc2) [10.00000000]
+159.30100000: (unload robot1 loc2 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+161.31100000: (empty robot1 loc2 box2 bendage person5) [3.00000000]
+164.32100000: (load robot1 loc2 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+168.33100000: (move robot1 carrier1 loc2 depot) [10.00000000]
+176.34100000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+178.35100000: (fill robot1 box2 bendage depot) [5.00000000]
+183.36100000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+187.37100000: (move robot1 carrier1 depot loc6) [10.00000000]
+195.38100000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+197.39100000: (empty robot1 loc6 box2 bendage person6) [3.00000000]
+200.40100000: (load robot1 loc6 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+204.41100000: (move robot1 carrier1 loc6 depot) [10.00000000]
+212.42100000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+214.43100000: (fill robot1 box2 pizza depot) [5.00000000]
+219.44100000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+223.45100000: (move robot1 carrier1 depot loc6) [10.00000000]
+231.46100000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+233.47100000: (empty robot1 loc6 box2 pizza person6) [3.00000000]
+236.48100000: (load robot1 loc6 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+240.49100000: (move robot1 carrier1 loc6 depot) [10.00000000]
+248.50100000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+250.51100000: (fill robot1 box2 xanax depot) [5.00000000]
+255.52100000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+259.53100000: (move robot1 carrier1 depot loc6) [10.00000000]
+267.54100000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+269.55100000: (empty robot1 loc6 box2 xanax person6) [3.00000000]
