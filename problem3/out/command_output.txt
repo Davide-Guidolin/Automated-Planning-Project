@@ -1,0 +1,583 @@
+PANDA - Planning and Acting in a Network Decomposition Architecture
+Believe us: It's great, it's fantastic!
+
+PANDA Copyright (C) 2014-2018 Gregor Behnke, Pascal Bercher, Thomas Geier, Kadir
+Dede, Daniel Höller, Kristof Mickeleit, Matthias Englert
+This program comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it under certain
+conditions; run PANDA with -license for details.
+
+Main Developers:
+- Gregor Behnke, http://www.uni-ulm.de/in/ki/behnke
+- Daniel Höller, http://www.uni-ulm.de/in/ki/hoeller
+
+With many thanks to various further contributors.
+Run PANDA with the command line argument -contributors for an extensive list.
+
+Run it with -help for more information like available options.
+
+
+PANDA was called with: "-parser hddl Automated-Planning-Project/problem3/domain.hddl Automated-Planning-Project/problem3/problem.hddl"
+
+
+Planner Configuration
+=====================
+Domain: Automated-Planning-Project/problem3/domain.hddl
+Problem: Automated-Planning-Project/problem3/problem.hddl
+Output: none
+
+Planning Configuration
+======================
+	printGeneralInformation : true
+	printAdditionalData     : true
+	random seed             : 42
+	time limit (in seconds) : none
+
+	external programs:
+
+
+	Parsing Configuration
+	---------------------
+	Parser                : HDDL Parser (Daniel's format)
+	Expand Sort Hierarchy : true
+	ClosedWordAssumption  : true
+	CompileSHOPMethods    : true
+	Eliminate Equality    : true
+	Strip Hybridity       : true
+	Reduce General Tasks  : true
+	
+	Preprocessing Configuration
+	---------------------------
+	Compile negative preconditions    : true
+	Compile unit methods              : false
+	Compile order in methods          : false
+	Compile initial plan              : true
+	Ensure Methods Have Last Task     : false
+	Split independent parameters      : true
+	Remove unnecessary predicates     : true
+	Expand choiceless abstract tasks  : true
+	Domain Cleanup                    : true
+	Convert to SAS+                   : false
+	Grounded Reachability Analysis    : Planning Graph (mutex-free)
+	Grounded Task Decomposition Graph : Two Way TDG
+	Iterate reachability analysis     : true
+	Ground domain                     : true
+	Iterate reachability analysis     : true
+	Stop directly after grounding     : false
+	
+	Progression-search Configuration
+	--------------------------------
+	Search Algorithm                 : AStarActionsType(2.0)
+	Heuristic                        : hhRC(hFF)
+	Abstract task selection strategy : random
+	
+	Post-processing Configuration
+	-----------------------------
+	search status
+	search result
+	timings
+	statistics
+#0 "00 global:01:problem"="problem.hddl";"00 global:00:domain"="domain.hddl"
+Parsing domain ... done
+Preparing internal domain representation ... done.
+Initial domain
+	number of abstract tasks = 6
+	number of tasks = 18
+	number of decomposition methods = 10
+	number of predicates = 11
+	number of sorts = 8
+	number of tasks in largest method = 4
+	number of primitive SHOP tasks = 5
+	number of epsilon methods = 0
+	number of primitive tasks = 12
+	number of constants = 31
+Compiling negative preconditions ... done.
+	number of abstract tasks = 6
+	number of tasks = 18
+	number of decomposition methods = 10
+	number of predicates = 22
+	number of sorts = 8
+	number of tasks in largest method = 4
+	number of primitive SHOP tasks = 5
+	number of epsilon methods = 0
+	number of primitive tasks = 12
+	number of constants = 31
+Compiling split parameters ... done.
+	number of abstract tasks = 9
+	number of tasks = 21
+	number of decomposition methods = 13
+	number of predicates = 22
+	number of sorts = 8
+	number of tasks in largest method = 4
+	number of primitive SHOP tasks = 5
+	number of epsilon methods = 0
+	number of primitive tasks = 12
+	number of constants = 31
+Lifted reachability analysis and domain cleanup ... done.
+	number of abstract tasks = 9
+	number of tasks = 21
+	number of decomposition methods = 13
+	number of predicates = 13
+	number of sorts = 8
+	number of tasks in largest method = 4
+	number of primitive SHOP tasks = 5
+	number of epsilon methods = 0
+	number of primitive tasks = 12
+	number of constants = 31
+Grounded planning graph ... done in 179ms.
+	Number of Grounded Actions 502
+	Number of Grounded Literals 157
+	number of abstract tasks = 9
+	number of tasks = 21
+	number of decomposition methods = 13
+	number of predicates = 13
+	number of sorts = 8
+	number of tasks in largest method = 4
+	number of primitive SHOP tasks = 5
+	number of epsilon methods = 0
+	number of primitive tasks = 12
+	number of constants = 31
+Two Way TDG ... done.
+	number of abstract tasks = 9
+	number of tasks = 21
+	number of decomposition methods = 13
+	number of predicates = 13
+	number of sorts = 8
+	number of tasks in largest method = 4
+	number of primitive SHOP tasks = 5
+	number of epsilon methods = 0
+	number of primitive tasks = 12
+	number of constants = 31
+Grounding ... done.
+	number of abstract tasks = 101
+	number of tasks = 456
+	number of decomposition methods = 669
+	number of predicates = 157
+	number of sorts = 0
+	number of tasks in largest method = 4
+	number of primitive SHOP tasks = 25
+	number of epsilon methods = 0
+	number of primitive tasks = 355
+	number of constants = 0
+Removing unnecessary predicates ... done.
+	number of abstract tasks = 101
+	number of tasks = 456
+	number of decomposition methods = 669
+	number of predicates = 98
+	number of sorts = 0
+	number of tasks in largest method = 4
+	number of primitive SHOP tasks = 25
+	number of epsilon methods = 0
+	number of primitive tasks = 355
+	number of constants = 0
+Omitting lifted reachability analysis ... 
+Grounded planning graph ... done in 106ms.
+	Number of Grounded Actions 340
+	Number of Grounded Literals 92
+	number of abstract tasks = 101
+	number of tasks = 441
+	number of decomposition methods = 654
+	number of predicates = 98
+	number of sorts = 0
+	number of tasks in largest method = 4
+	number of primitive SHOP tasks = 25
+	number of epsilon methods = 0
+	number of primitive tasks = 340
+	number of constants = 0
+Two Way TDG ... done.
+	number of abstract tasks = 101
+	number of tasks = 441
+	number of decomposition methods = 619
+	number of predicates = 98
+	number of sorts = 0
+	number of tasks in largest method = 4
+	number of primitive SHOP tasks = 25
+	number of epsilon methods = 0
+	number of primitive tasks = 340
+	number of constants = 0
+Compiling expand choiceless abstract tasks ... done.
+	number of abstract tasks = 94
+	number of tasks = 434
+	number of decomposition methods = 612
+	number of predicates = 98
+	number of sorts = 0
+	number of tasks in largest method = 4
+	number of primitive SHOP tasks = 25
+	number of epsilon methods = 0
+	number of primitive tasks = 340
+	number of constants = 0
+Compiling initial plan ... done.
+	number of abstract tasks = 95
+	number of tasks = 435
+	number of decomposition methods = 613
+	number of predicates = 98
+	number of sorts = 0
+	number of tasks in largest method = 21
+	number of primitive SHOP tasks = 25
+	number of epsilon methods = 0
+	number of primitive tasks = 340
+	number of constants = 0
+Removing unnecessary predicates ... done.
+	number of abstract tasks = 95
+	number of tasks = 435
+	number of decomposition methods = 613
+	number of predicates = 92
+	number of sorts = 0
+	number of tasks in largest method = 21
+	number of primitive SHOP tasks = 25
+	number of epsilon methods = 0
+	number of primitive tasks = 340
+	number of constants = 0
+Omitting lifted reachability analysis ... 
+Grounded planning graph ... done in 49ms.
+	Number of Grounded Actions 340
+	Number of Grounded Literals 92
+	number of abstract tasks = 95
+	number of tasks = 435
+	number of decomposition methods = 613
+	number of predicates = 92
+	number of sorts = 0
+	number of tasks in largest method = 21
+	number of primitive SHOP tasks = 25
+	number of epsilon methods = 0
+	number of primitive tasks = 340
+	number of constants = 0
+Two Way TDG ... done.
+	number of abstract tasks = 95
+	number of tasks = 435
+	number of decomposition methods = 613
+	number of predicates = 92
+	number of sorts = 0
+	number of tasks in largest method = 21
+	number of primitive SHOP tasks = 25
+	number of epsilon methods = 0
+	number of primitive tasks = 340
+	number of constants = 0
+Compiling expand choiceless abstract tasks ... done.
+	number of abstract tasks = 94
+	number of tasks = 434
+	number of decomposition methods = 612
+	number of predicates = 92
+	number of sorts = 0
+	number of tasks in largest method = 4
+	number of primitive SHOP tasks = 25
+	number of epsilon methods = 0
+	number of primitive tasks = 340
+	number of constants = 0
+Compiling initial plan ... done.
+	number of abstract tasks = 95
+	number of tasks = 435
+	number of decomposition methods = 613
+	number of predicates = 92
+	number of sorts = 0
+	number of tasks in largest method = 21
+	number of primitive SHOP tasks = 25
+	number of epsilon methods = 0
+	number of primitive tasks = 340
+	number of constants = 0
+Removing unnecessary predicates ... done.
+	number of abstract tasks = 95
+	number of tasks = 435
+	number of decomposition methods = 613
+	number of predicates = 92
+	number of sorts = 0
+	number of tasks in largest method = 21
+	number of primitive SHOP tasks = 25
+	number of epsilon methods = 0
+	number of primitive tasks = 340
+	number of constants = 0
+Tasks 340 - 18
+Domain is acyclic: true
+Domain is mostly acyclic: true
+Domain is regular: false
+Domain is tail recursive: true
+Domain is totally ordered: true
+Domain has last task in all methods: true
+Time remaining for planner 9223372036854773451ms
+Reducing flat domain ... done.
+ - Reduced number of operators from 355 to 340
+ - Reduced number of state-bits from 98 to 92
+Generating Relaxed Composition Model ...
+Calculating top down reachability ...
+ - Found 435 SCCs with up to 1 tasks.
+ - Reachability calculated in 4 ms.
+ - model has 953 operators
+ - model has 867 state features
+ - operators' mean count of (pre, add, del) = (3.15, 1.59, 0.60)
+ - effects' mean achiever count: 1.59
+ - effects' mean consumer count: 3.15
+
+Searching with 
+ - Priority Queue search routine
+ - A-Star search
+ - HTN heuristic:hhRelataxedComposition-with-hFF-EQ
+ - Abstract task choice: randomly
+ - time limit for search is 2147483647 sec
+
+Starting priority queue search
+Found solution 1 length 72
+Number of nodes in final fringe: 605
+Generated search nodes (total): 2621
+Search time: 273 ms
+
+Found a solution:
+__top_4 @ __artificialTopCompilation__top_4
+SHOP_methodm_satisfy_0_precondition[person2,banana]
+m_get_content_nobox[?r=robot1,?cr=carrier1,?x=depot,?c=banana] @ get_content[robot1,banana]
+SHOP_methodm_get_content_nobox_1_precondition[banana,depot]
+m_already_there[?r=robot1,?x=depot,?cr=carrier1] @ get_to[robot1,depot]
+no_move[robot1,carrier1,depot]
+m_get_content_nobox_m_get_content_nobox_3[?cr=carrier1,?b=box2,?c=banana] @ load_content_m_get_content_nobox_3[carrier1,banana]
+m_load_content[?c=banana,?cp_prev=capacity_3,?cr=carrier1,?x=depot,?cp_succ=capacity_4,?b=box2,?r=robot1] @ load_content[carrier1,box2,banana]
+fill[robot1,box2,banana,depot]
+load[robot1,depot,box2,carrier1,capacity_3,capacity_4]
+m_delivery_wbox[?cp_prev=capacity_3,?c=banana,?p=person2,?cp_succ=capacity_4,?x=loc3,?b=box2,?r=robot1,?cr=carrier1] @ delivery[robot1,person2,banana]
+SHOP_methodm_delivery_wbox_4_precondition[person2,loc3]
+m_get_to[?r=robot1,?x=loc3,?x1=depot,?cr=carrier1] @ get_to[robot1,loc3]
+move[robot1,carrier1,depot,loc3]
+m_unload_content[?p=person2,?cp_succ=capacity_4,?cr=carrier1,?cp_prev=capacity_3,?c=banana,?x=loc3,?r=robot1,?b=box2] @ unload_content[carrier1,box2,banana,person2]
+unload[robot1,loc3,box2,carrier1,capacity_3,capacity_4]
+empty[robot1,loc3,box2,banana,person2]
+load[robot1,loc3,box2,carrier1,capacity_3,capacity_4]
+SHOP_methodm_satisfy_0_precondition[person3,xanax]
+m_get_content_nobox[?r=robot1,?cr=carrier1,?x=depot,?c=xanax] @ get_content[robot1,xanax]
+SHOP_methodm_get_content_nobox_1_precondition[xanax,depot]
+m_get_to[?r=robot1,?x=depot,?x1=loc3,?cr=carrier1] @ get_to[robot1,depot]
+move[robot1,carrier1,loc3,depot]
+m_get_content_nobox_m_get_content_nobox_3[?cr=carrier1,?b=box4,?c=xanax] @ load_content_m_get_content_nobox_3[carrier1,xanax]
+m_load_content[?c=xanax,?cp_prev=capacity_2,?cr=carrier1,?x=depot,?cp_succ=capacity_3,?b=box4,?r=robot1] @ load_content[carrier1,box4,xanax]
+fill[robot1,box4,xanax,depot]
+load[robot1,depot,box4,carrier1,capacity_2,capacity_3]
+m_delivery_nobox[?cr=carrier1,?c=xanax,?p=person3,?x=loc4,?r=robot1] @ delivery[robot1,person3,xanax]
+SHOP_methodm_delivery_nobox_3_precondition[person3,loc4]
+m_get_to[?r=robot1,?x=loc4,?x1=depot,?cr=carrier1] @ get_to[robot1,loc4]
+move[robot1,carrier1,depot,loc4]
+m_delivery_nobox_m_delivery_nobox_3[?c=xanax,?cr=carrier1,?b=box4,?p=person3] @ unload_content_m_delivery_nobox_3[carrier1,xanax,person3]
+m_unload_content[?p=person3,?cp_succ=capacity_3,?cr=carrier1,?cp_prev=capacity_2,?c=xanax,?x=loc4,?r=robot1,?b=box4] @ unload_content[carrier1,box4,xanax,person3]
+unload[robot1,loc4,box4,carrier1,capacity_2,capacity_3]
+empty[robot1,loc4,box4,xanax,person3]
+SHOP_methodm_satisfy_0_precondition[person3,hammer]
+m_get_content_wbox[?cr=carrier1,?b=box2,?cp_succ=capacity_4,?x=depot,?r=robot1,?c=hammer,?cp_prev=capacity_3] @ get_content[robot1,hammer]
+SHOP_methodm_get_content_wbox_2_precondition[hammer,depot]
+m_get_to[?r=robot1,?x=depot,?x1=loc4,?cr=carrier1] @ get_to[robot1,depot]
+move[robot1,carrier1,loc4,depot]
+unload[robot1,depot,box2,carrier1,capacity_3,capacity_4]
+m_load_content[?c=hammer,?cp_prev=capacity_3,?cr=carrier1,?x=depot,?cp_succ=capacity_4,?b=box2,?r=robot1] @ load_content[carrier1,box2,hammer]
+fill[robot1,box2,hammer,depot]
+load[robot1,depot,box2,carrier1,capacity_3,capacity_4]
+m_delivery_wbox[?cp_prev=capacity_3,?c=hammer,?p=person3,?cp_succ=capacity_4,?x=loc4,?b=box2,?r=robot1,?cr=carrier1] @ delivery[robot1,person3,hammer]
+SHOP_methodm_delivery_wbox_4_precondition[person3,loc4]
+m_get_to[?r=robot1,?x=loc4,?x1=depot,?cr=carrier1] @ get_to[robot1,loc4]
+move[robot1,carrier1,depot,loc4]
+m_unload_content[?p=person3,?cp_succ=capacity_4,?cr=carrier1,?cp_prev=capacity_3,?c=hammer,?x=loc4,?r=robot1,?b=box2] @ unload_content[carrier1,box2,hammer,person3]
+unload[robot1,loc4,box2,carrier1,capacity_3,capacity_4]
+empty[robot1,loc4,box2,hammer,person3]
+load[robot1,loc4,box2,carrier1,capacity_3,capacity_4]
+SHOP_methodm_satisfy_0_precondition[person5,bendage]
+m_get_content_wbox[?cr=carrier1,?b=box2,?cp_succ=capacity_4,?x=depot,?r=robot1,?c=bendage,?cp_prev=capacity_3] @ get_content[robot1,bendage]
+SHOP_methodm_get_content_wbox_2_precondition[bendage,depot]
+m_get_to[?r=robot1,?x=depot,?x1=loc4,?cr=carrier1] @ get_to[robot1,depot]
+move[robot1,carrier1,loc4,depot]
+unload[robot1,depot,box2,carrier1,capacity_3,capacity_4]
+m_load_content[?c=bendage,?cp_prev=capacity_3,?cr=carrier1,?x=depot,?cp_succ=capacity_4,?b=box2,?r=robot1] @ load_content[carrier1,box2,bendage]
+fill[robot1,box2,bendage,depot]
+load[robot1,depot,box2,carrier1,capacity_3,capacity_4]
+m_delivery_nobox[?cr=carrier1,?c=bendage,?p=person5,?x=loc2,?r=robot1] @ delivery[robot1,person5,bendage]
+SHOP_methodm_delivery_nobox_3_precondition[person5,loc2]
+m_get_to[?r=robot1,?x=loc2,?x1=depot,?cr=carrier1] @ get_to[robot1,loc2]
+move[robot1,carrier1,depot,loc2]
+m_delivery_nobox_m_delivery_nobox_3[?c=bendage,?cr=carrier1,?b=box2,?p=person5] @ unload_content_m_delivery_nobox_3[carrier1,bendage,person5]
+m_unload_content[?p=person5,?cp_succ=capacity_4,?cr=carrier1,?cp_prev=capacity_3,?c=bendage,?x=loc2,?r=robot1,?b=box2] @ unload_content[carrier1,box2,bendage,person5]
+unload[robot1,loc2,box2,carrier1,capacity_3,capacity_4]
+empty[robot1,loc2,box2,bendage,person5]
+SHOP_methodm_satisfy_0_precondition[person6,bendage]
+m_get_content_nobox[?r=robot1,?cr=carrier1,?x=depot,?c=bendage] @ get_content[robot1,bendage]
+SHOP_methodm_get_content_nobox_1_precondition[bendage,depot]
+m_get_to[?r=robot1,?x=depot,?x1=loc2,?cr=carrier1] @ get_to[robot1,depot]
+move[robot1,carrier1,loc2,depot]
+m_get_content_nobox_m_get_content_nobox_3[?cr=carrier1,?b=box1,?c=bendage] @ load_content_m_get_content_nobox_3[carrier1,bendage]
+m_load_content[?c=bendage,?cp_prev=capacity_3,?cr=carrier1,?x=depot,?cp_succ=capacity_4,?b=box1,?r=robot1] @ load_content[carrier1,box1,bendage]
+fill[robot1,box1,bendage,depot]
+load[robot1,depot,box1,carrier1,capacity_3,capacity_4]
+m_delivery_wbox[?cp_prev=capacity_3,?c=bendage,?p=person6,?cp_succ=capacity_4,?x=loc6,?b=box1,?r=robot1,?cr=carrier1] @ delivery[robot1,person6,bendage]
+SHOP_methodm_delivery_wbox_4_precondition[person6,loc6]
+m_get_to[?r=robot1,?x=loc6,?x1=depot,?cr=carrier1] @ get_to[robot1,loc6]
+move[robot1,carrier1,depot,loc6]
+m_unload_content[?p=person6,?cp_succ=capacity_4,?cr=carrier1,?cp_prev=capacity_3,?c=bendage,?x=loc6,?r=robot1,?b=box1] @ unload_content[carrier1,box1,bendage,person6]
+unload[robot1,loc6,box1,carrier1,capacity_3,capacity_4]
+empty[robot1,loc6,box1,bendage,person6]
+load[robot1,loc6,box1,carrier1,capacity_3,capacity_4]
+SHOP_methodm_satisfy_0_precondition[person6,pizza]
+m_get_content_wbox[?cr=carrier1,?b=box1,?cp_succ=capacity_4,?x=depot,?r=robot1,?c=pizza,?cp_prev=capacity_3] @ get_content[robot1,pizza]
+SHOP_methodm_get_content_wbox_2_precondition[pizza,depot]
+m_get_to[?r=robot1,?x=depot,?x1=loc6,?cr=carrier1] @ get_to[robot1,depot]
+move[robot1,carrier1,loc6,depot]
+unload[robot1,depot,box1,carrier1,capacity_3,capacity_4]
+m_load_content[?c=pizza,?cp_prev=capacity_3,?cr=carrier1,?x=depot,?cp_succ=capacity_4,?b=box1,?r=robot1] @ load_content[carrier1,box1,pizza]
+fill[robot1,box1,pizza,depot]
+load[robot1,depot,box1,carrier1,capacity_3,capacity_4]
+m_delivery_wbox[?cp_prev=capacity_3,?c=pizza,?p=person6,?cp_succ=capacity_4,?x=loc6,?b=box1,?r=robot1,?cr=carrier1] @ delivery[robot1,person6,pizza]
+SHOP_methodm_delivery_wbox_4_precondition[person6,loc6]
+m_get_to[?r=robot1,?x=loc6,?x1=depot,?cr=carrier1] @ get_to[robot1,loc6]
+move[robot1,carrier1,depot,loc6]
+m_unload_content[?p=person6,?cp_succ=capacity_4,?cr=carrier1,?cp_prev=capacity_3,?c=pizza,?x=loc6,?r=robot1,?b=box1] @ unload_content[carrier1,box1,pizza,person6]
+unload[robot1,loc6,box1,carrier1,capacity_3,capacity_4]
+empty[robot1,loc6,box1,pizza,person6]
+load[robot1,loc6,box1,carrier1,capacity_3,capacity_4]
+SHOP_methodm_satisfy_0_precondition[person6,xanax]
+m_get_content_wbox[?cr=carrier1,?b=box1,?cp_succ=capacity_4,?x=depot,?r=robot1,?c=xanax,?cp_prev=capacity_3] @ get_content[robot1,xanax]
+SHOP_methodm_get_content_wbox_2_precondition[xanax,depot]
+m_get_to[?r=robot1,?x=depot,?x1=loc6,?cr=carrier1] @ get_to[robot1,depot]
+move[robot1,carrier1,loc6,depot]
+unload[robot1,depot,box1,carrier1,capacity_3,capacity_4]
+m_load_content[?c=xanax,?cp_prev=capacity_3,?cr=carrier1,?x=depot,?cp_succ=capacity_4,?b=box1,?r=robot1] @ load_content[carrier1,box1,xanax]
+fill[robot1,box1,xanax,depot]
+load[robot1,depot,box1,carrier1,capacity_3,capacity_4]
+m_delivery_wbox[?cp_prev=capacity_3,?c=xanax,?p=person6,?cp_succ=capacity_4,?x=loc6,?b=box1,?r=robot1,?cr=carrier1] @ delivery[robot1,person6,xanax]
+SHOP_methodm_delivery_wbox_4_precondition[person6,loc6]
+m_get_to[?r=robot1,?x=loc6,?x1=depot,?cr=carrier1] @ get_to[robot1,loc6]
+move[robot1,carrier1,depot,loc6]
+m_unload_content[?p=person6,?cp_succ=capacity_4,?cr=carrier1,?cp_prev=capacity_3,?c=xanax,?x=loc6,?r=robot1,?b=box1] @ unload_content[carrier1,box1,xanax,person6]
+unload[robot1,loc6,box1,carrier1,capacity_3,capacity_4]
+empty[robot1,loc6,box1,xanax,person6]
+load[robot1,loc6,box1,carrier1,capacity_3,capacity_4]
+It contains 120 modifications, including 72 actions.
+Panda says: SOLUTION
+============ global ============
+randomseed     = 42
+peak memory    = 169079328
+planner result = SOLUTION
+============ properties ============
+acyclic                  = true
+mostly acyclic           = true
+regular                  = false
+tail recursive           = true
+totally ordered          = true
+last task in all methods = true
+============ problem ============
+number of constants                  = 0
+number of predicates                 = 92
+number of actions                    = 435
+number of abstract actions           = 95
+number of primitive actions          = 340
+number of methods                    = 613
+number of primitive shop actions     = 25
+number of primitive non-shop actions = 315
+size of largest method               = 21
+average method size                  = 2
+============ progression ============
+status                 = solved
+aStar                  = 1
+heuristic              = hhRelataxedComposition-with-hFF-EQ
+numSearchNodes         = 2621
+numPrimTasks           = 72
+numShopTasks           = 0
+numDecompositions      = 48
+findShortestPlan       = 0
+foundShortestPlanAfter = 269
+foundFirstPlanAfter    = 269
+foundPlans             = 1
+
+----------------- TIMINGS -----------------
+============ total ============
+total = 2678
+============ parsing ============
+total                         = 473
+file parser                   = 219
+sort expansion                = 106
+closed world assumption       = 55
+inherit preconditions         = 0
+shop methods                  = 11
+eliminate identical variables = 39
+strip domain of hybridity     = 1
+flatten formula               = 41
+============ preprocessing ============
+total                                      = 1725
+compile negative preconditions             = 26
+compile unit methods                       = 0
+split parameter                            = 33
+expand choiceless abstract tasks           = 60
+compile methods with identical tasks       = 0
+removing unnecessary predicates            = 261
+lifted reachabiltiy analysis               = 46
+grounded planning graph analysis           = 498
+grounded task decomposition graph analysis = 622
+grounding                                  = 163
+create artificial top task                 = 4
+============ progression ============
+searchTime = 270
+
+#1 "30 problem:05:number of primitive actions"="340";"30 problem:01:number of constants"="0";"30 problem:04:number of abstract actions"="95";"02 properties:04:tail recursive"="true";"30 progression:04:numSearchNodes"="2621";"30 progression:06:numPrimTasks"="72";"00 global:80:peak memory"="169079328";"30 progression:93:foundFirstPlanAfter"="269";"02 properties:02:mostly acyclic"="true";"30 problem:06:number of methods"="613";"30 problem:07:number of primitive shop actions"="25";"02 properties:05:totally ordered"="true";"02 properties:06:last task in all methods"="true";"30 problem:03:number of actions"="435";"30 problem:08:number of primitive non-shop actions"="315";"30 problem:02:number of predicates"="92";"30 progression:01:status"="solved";"30 progression:03:heuristic"="hhRelataxedComposition-with-hFF-EQ";"30 problem:10:average method size"="2";"02 properties:03:regular"="false";"30 problem:09:size of largest method"="21";"30 progression:08:numDecompositions"="48";"00 global:90:planner result"="SOLUTION";"02 properties:01:acyclic"="true";"30 progression:02:aStar"="1";"30 progression:92:foundShortestPlanAfter"="269";"00 global:02:randomseed"="42";"30 progression:07:numShopTasks"="0";"30 progression:91:findShortestPlan"="0";"30 progression:94:foundPlans"="1";"01 parsing:01:file parser"="219";"01 parsing:08:flatten formula"="41";"02 preprocessing:07:compile methods with identical tasks"="0";"01 parsing:07:strip domain of hybridity"="1";"02 preprocessing:08:removing unnecessary predicates"="261";"01 parsing:03:closed world assumption"="55";"02 preprocessing:11:lifted reachabiltiy analysis"="46";"01 parsing:02:sort expansion"="106";"01 parsing:00:total"="473";"30 progression:01:searchTime"="270";"01 parsing:04:inherit preconditions"="0";"02 preprocessing:01:compile negative preconditions"="26";"00 total:00:total"="2678";"02 preprocessing:12:grounded planning graph analysis"="498";"02 preprocessing:02:compile unit methods"="0";"02 preprocessing:23:grounded task decomposition graph analysis"="622";"02 preprocessing:04:split parameter"="33";"01 parsing:05:shop methods"="11";"01 parsing:06:eliminate identical variables"="39";"02 preprocessing:05:expand choiceless abstract tasks"="60";"02 preprocessing:00:total"="1725";"02 preprocessing:99:create artificial top task"="4";"02 preprocessing:84:grounding"="163"
+SOLUTION SEQUENCE
+0: SHOP_methodm_satisfy_0_precondition(person2,banana)
+1: SHOP_methodm_get_content_nobox_1_precondition(banana,depot)
+2: no_move(robot1,carrier1,depot)
+3: fill(robot1,box2,banana,depot)
+4: load(robot1,depot,box2,carrier1,capacity_3,capacity_4)
+5: SHOP_methodm_delivery_wbox_4_precondition(person2,loc3)
+6: move(robot1,carrier1,depot,loc3)
+7: unload(robot1,loc3,box2,carrier1,capacity_3,capacity_4)
+8: empty(robot1,loc3,box2,banana,person2)
+9: load(robot1,loc3,box2,carrier1,capacity_3,capacity_4)
+10: SHOP_methodm_satisfy_0_precondition(person3,xanax)
+11: SHOP_methodm_get_content_nobox_1_precondition(xanax,depot)
+12: move(robot1,carrier1,loc3,depot)
+13: fill(robot1,box4,xanax,depot)
+14: load(robot1,depot,box4,carrier1,capacity_2,capacity_3)
+15: SHOP_methodm_delivery_nobox_3_precondition(person3,loc4)
+16: move(robot1,carrier1,depot,loc4)
+17: unload(robot1,loc4,box4,carrier1,capacity_2,capacity_3)
+18: empty(robot1,loc4,box4,xanax,person3)
+19: SHOP_methodm_satisfy_0_precondition(person3,hammer)
+20: SHOP_methodm_get_content_wbox_2_precondition(hammer,depot)
+21: move(robot1,carrier1,loc4,depot)
+22: unload(robot1,depot,box2,carrier1,capacity_3,capacity_4)
+23: fill(robot1,box2,hammer,depot)
+24: load(robot1,depot,box2,carrier1,capacity_3,capacity_4)
+25: SHOP_methodm_delivery_wbox_4_precondition(person3,loc4)
+26: move(robot1,carrier1,depot,loc4)
+27: unload(robot1,loc4,box2,carrier1,capacity_3,capacity_4)
+28: empty(robot1,loc4,box2,hammer,person3)
+29: load(robot1,loc4,box2,carrier1,capacity_3,capacity_4)
+30: SHOP_methodm_satisfy_0_precondition(person5,bendage)
+31: SHOP_methodm_get_content_wbox_2_precondition(bendage,depot)
+32: move(robot1,carrier1,loc4,depot)
+33: unload(robot1,depot,box2,carrier1,capacity_3,capacity_4)
+34: fill(robot1,box2,bendage,depot)
+35: load(robot1,depot,box2,carrier1,capacity_3,capacity_4)
+36: SHOP_methodm_delivery_nobox_3_precondition(person5,loc2)
+37: move(robot1,carrier1,depot,loc2)
+38: unload(robot1,loc2,box2,carrier1,capacity_3,capacity_4)
+39: empty(robot1,loc2,box2,bendage,person5)
+40: SHOP_methodm_satisfy_0_precondition(person6,bendage)
+41: SHOP_methodm_get_content_nobox_1_precondition(bendage,depot)
+42: move(robot1,carrier1,loc2,depot)
+43: fill(robot1,box1,bendage,depot)
+44: load(robot1,depot,box1,carrier1,capacity_3,capacity_4)
+45: SHOP_methodm_delivery_wbox_4_precondition(person6,loc6)
+46: move(robot1,carrier1,depot,loc6)
+47: unload(robot1,loc6,box1,carrier1,capacity_3,capacity_4)
+48: empty(robot1,loc6,box1,bendage,person6)
+49: load(robot1,loc6,box1,carrier1,capacity_3,capacity_4)
+50: SHOP_methodm_satisfy_0_precondition(person6,pizza)
+51: SHOP_methodm_get_content_wbox_2_precondition(pizza,depot)
+52: move(robot1,carrier1,loc6,depot)
+53: unload(robot1,depot,box1,carrier1,capacity_3,capacity_4)
+54: fill(robot1,box1,pizza,depot)
+55: load(robot1,depot,box1,carrier1,capacity_3,capacity_4)
+56: SHOP_methodm_delivery_wbox_4_precondition(person6,loc6)
+57: move(robot1,carrier1,depot,loc6)
+58: unload(robot1,loc6,box1,carrier1,capacity_3,capacity_4)
+59: empty(robot1,loc6,box1,pizza,person6)
+60: load(robot1,loc6,box1,carrier1,capacity_3,capacity_4)
+61: SHOP_methodm_satisfy_0_precondition(person6,xanax)
+62: SHOP_methodm_get_content_wbox_2_precondition(xanax,depot)
+63: move(robot1,carrier1,loc6,depot)
+64: unload(robot1,depot,box1,carrier1,capacity_3,capacity_4)
+65: fill(robot1,box1,xanax,depot)
+66: load(robot1,depot,box1,carrier1,capacity_3,capacity_4)
+67: SHOP_methodm_delivery_wbox_4_precondition(person6,loc6)
+68: move(robot1,carrier1,depot,loc6)
+69: unload(robot1,loc6,box1,carrier1,capacity_3,capacity_4)
+70: empty(robot1,loc6,box1,xanax,person6)
+71: load(robot1,loc6,box1,carrier1,capacity_3,capacity_4)
