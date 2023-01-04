@@ -1,0 +1,256 @@
+(define (domain robo-doctor_3)
+(:requirements :typing :negative-preconditions :hierachie)
+(:types robot person location box content carrier capacity_number)
+
+(:predicates
+    (capacity ?cr - carrier ?cp - capacity_number)
+    (capacity_predecessor ?cp_prev - capacity_number ?cp_succ - capacity_number)
+    (robot-at ?r - robot ?x - location)
+    (carrier-at ?cr - carrier ?x - location)
+    (carrier-has ?cr - carrier ?b - box)
+    (content-at ?c - content ?x - location)
+    (box-at ?b - box ?x - location)
+    (box-contains ?b - box ?c - content)
+    (person-at ?p - person ?x - location)
+    (person-has ?p - person ?c - content)
+    (box-full ?b - box)
+    )
+
+(:task satisfy
+    :parameters (?p - person ?c - content)
+    :precondition ()
+    :effect ()
+)
+
+(:task get_content
+    :parameters (?r - robot ?c - content)
+    :precondition ()
+    :effect ()
+)
+
+(:task delivery
+    :parameters (?r - robot ?p - person ?c - content)
+    :precondition ()
+    :effect ()
+)
+
+(:task get_to
+    :parameters (?r - robot ?x - location)
+    :precondition ()
+    :effect ()
+)
+
+(:task load_content
+    :parameters (?cr - carrier ?b - box ?c - content)
+    :precondition ()
+    :effect ()
+)
+
+(:task unload_content
+    :parameters (?cr - carrier ?b - box ?c - content ?p - person)
+    :precondition ()
+    :effect ()
+)
+
+(:method m_satisfy
+    :parameters (?r - robot ?c - content ?p - person)
+    :task (satisfy ?p ?c)
+    :precondition(and
+        (not(person-has ?p ?c))
+    )
+    :subtasks (and
+        (task0 (get_content ?r ?c))
+        (task1 (delivery ?r ?p ?c))
+    )
+    :ordering (and
+        (task0 < task1)
+    )
+)
+
+(:method m_get_content_nobox
+    :parameters (?r - robot ?c - content ?x - location ?cr - carrier ?b - box)
+    :task (get_content ?r ?c)
+    :precondition (and
+        (content-at ?c ?x)
+    )
+    :subtasks (and
+        (task0 (get_to ?r ?x))
+        (task1 (load_content ?cr ?b ?c))
+    )
+    :ordering(and
+        (task0 < task1)
+    )
+)
+
+(:method m_get_content_wbox
+    :parameters (?r - robot ?c - content ?x - location ?cr - carrier ?b - box ?cp_prev - capacity_number ?cp_succ - capacity_number)
+    :task (get_content ?r ?c)
+    :precondition (and
+        (content-at ?c ?x)
+    )
+    :subtasks (and
+        (task0 (get_to ?r ?x))
+        (task1 (unload ?r ?x ?b ?cr ?cp_prev ?cp_succ))
+        (task2 (load_content ?cr ?b ?c))
+    )
+    :ordering(and
+        (task0 < task1)
+        (task1 < task2)
+    )
+)
+
+(:method m_delivery_nobox
+    :parameters (?r - robot ?p - person ?cr - carrier ?b - box ?c - content ?x - location)
+    :task (delivery ?r ?p ?c)
+    :precondition (and
+        (person-at ?p ?x)
+    )
+    :subtasks(and
+        (task0 (get_to ?r ?x))
+        (task1 (unload_content ?cr ?b ?c ?p))
+    )
+    :ordering(and
+        (task0 < task1)
+    )
+)
+
+(:method m_delivery_wbox
+    :parameters (?r - robot ?p - person ?cr - carrier ?b - box ?c - content ?x - location ?cp_prev - capacity_number ?cp_succ - capacity_number)
+    :task (delivery ?r ?p ?c)
+    :precondition (and
+        (person-at ?p ?x)
+    )
+    :subtasks(and
+        (task0 (get_to ?r ?x))
+        (task1 (unload_content ?cr ?b ?c ?p))
+        (task2 (load ?r ?x ?b ?cr ?cp_prev ?cp_succ))
+    )
+    :ordering(and
+        (task0 < task1)
+        (task1 < task2)
+    )
+)
+
+(:method m_already_got_content
+    :parameters (?r - robot ?c - content ?x - location ?cr - carrier ?b - box)
+    :task (get_content ?r ?c)
+    :subtasks (and
+        (task0 (no_load ?cr ?b ?c))
+    )
+)
+
+(:method m_get_to
+    :parameters (?r - robot ?cr - carrier ?x1 - location ?x2 - location)
+    :task(get_to ?r ?x2)
+    :subtasks(and
+        (task0 (move ?r ?cr ?x1 ?x2))
+    )
+)
+
+(:method m_already_there
+    :parameters (?r - robot ?cr - carrier ?x2 - location)
+    :task(get_to ?r ?x2)
+    :subtasks(and
+        (task0 (no_move ?r ?cr ?x2))
+    )
+)
+
+(:method m_load_content
+    :parameters (?r - robot ?cr - carrier ?b - box ?c - content ?x - location ?cp_prev - capacity_number ?cp_succ - capacity_number)
+    :task (load_content ?cr ?b ?c)
+    :subtasks (and
+        (task0 (fill ?r ?b ?c ?x))
+        (task1 (load ?r ?x ?b ?cr ?cp_prev ?cp_succ))
+    )
+    :ordering (and
+        (task0 < task1)
+    )
+)
+
+(:method m_unload_content
+    :parameters (?r - robot ?cr - carrier ?b - box ?c - content ?x - location ?p - person ?cp_prev - capacity_number ?cp_succ - capacity_number)
+    :task (unload_content ?cr ?b ?c ?p)
+    :subtasks (and
+        (task0 (unload ?r ?x ?b ?cr ?cp_prev ?cp_succ))
+        (task1 (empty ?r ?x ?b ?c ?p))
+    )
+    :ordering (and
+        (task0 < task1)
+    )
+)
+
+(:action no_move
+		:parameters (?r - robot ?cr - carrier ?x - location)
+		:precondition
+			(and
+				(robot-at ?r ?x)
+				(carrier-at ?cr ?x)
+			)
+		:effect ()
+)
+
+(:action no_load
+		:parameters (?cr - carrier ?b - box ?c - content)
+		:precondition
+			(and
+				(carrier-has ?cr ?b)
+				(box-contains ?b ?c)
+			)
+		:effect ()
+)
+
+(:action fill
+    :parameters (?r - robot ?b - box ?c - content ?x - location)
+    :precondition (and  (robot-at ?r ?x)
+                        (box-at ?b ?x)
+                        (content-at ?c ?x)
+                        (not(box-full ?b)))
+    :effect (and        (box-full ?b)
+                        (box-contains ?b ?c)))
+
+(:action load
+    :parameters (?r - robot ?x - location ?b - box ?cr - carrier ?cp_prev - capacity_number ?cp_succ - capacity_number)
+    :precondition (and  (robot-at ?r ?x)
+                        (box-at ?b ?x)
+                        (capacity_predecessor ?cp_prev ?cp_succ)
+                        (capacity ?cr ?cp_succ))
+    :effect (and        (carrier-has ?cr ?b)
+                        (not(box-at ?b ?x))
+                        (not(capacity ?cr ?cp_succ))
+                        (capacity ?cr ?cp_prev)))
+
+(:action move
+    :parameters (?r - robot ?cr - carrier ?x1 - location ?x2 - location)
+    :precondition (and  (robot-at ?r ?x1)
+                        (not(robot-at ?r ?x2))
+                        (carrier-at ?cr ?x1)
+                        (not(carrier-at ?cr ?x2)))
+    :effect (and        (robot-at ?r ?x2)
+                        (not(robot-at ?r ?x1))
+                        (carrier-at ?cr ?x2)
+                        (not(carrier-at ?cr ?x1))))
+
+
+(:action unload
+    :parameters (?r - robot ?x - location ?b - box ?cr - carrier ?cp_prev - capacity_number ?cp_succ - capacity_number)
+    :precondition (and  (robot-at ?r ?x)
+                        (carrier-at ?cr ?x)
+                        (carrier-has ?cr ?b)
+                        (capacity_predecessor ?cp_prev ?cp_succ)
+                        (capacity ?cr ?cp_prev)
+                        )
+    :effect (and        (box-at ?b ?x)
+                        (capacity ?cr ?cp_succ)
+                        (not(capacity ?cr ?cp_prev))
+                        (not(carrier-has ?cr ?b))))
+
+(:action empty
+    :parameters (?r - robot ?x - location ?b - box ?c - content ?p - person)
+    :precondition (and  (robot-at ?r ?x)
+                        (box-at ?b ?x)
+                        (box-contains ?b ?c)
+                        (person-at ?p ?x))
+    :effect (and        (not(box-contains ?b ?c))
+                        (person-has ?p ?c)
+                        (not(box-full ?b))))
+)
