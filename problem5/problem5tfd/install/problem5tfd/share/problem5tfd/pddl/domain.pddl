@@ -1,0 +1,1 @@
+/root/shared/problem5/problem5tfd/pddl/domain.pddl

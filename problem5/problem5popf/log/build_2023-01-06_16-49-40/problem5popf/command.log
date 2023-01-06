@@ -1,0 +1,6 @@
+Invoking command in '/root/shared/problem5/problem5popf/build/problem5popf': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/shared/problem5/problem5popf -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/shared/problem5/problem5popf/install/problem5popf
+Invoked command in '/root/shared/problem5/problem5popf/build/problem5popf' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/shared/problem5/problem5popf -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/shared/problem5/problem5popf/install/problem5popf
+Invoking command in '/root/shared/problem5/problem5popf/build/problem5popf': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/shared/problem5/problem5popf/build/problem5popf -- -j8 -l8
+Invoked command in '/root/shared/problem5/problem5popf/build/problem5popf' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/shared/problem5/problem5popf/build/problem5popf -- -j8 -l8
+Invoking command in '/root/shared/problem5/problem5popf/build/problem5popf': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/shared/problem5/problem5popf/build/problem5popf
+Invoked command in '/root/shared/problem5/problem5popf/build/problem5popf' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/shared/problem5/problem5popf/build/problem5popf

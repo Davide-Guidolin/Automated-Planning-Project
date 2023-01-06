@@ -1,0 +1,55 @@
+set instance robot1 robot                                              
+set instance person1 person
+set instance person2 person
+set instance person3 person
+set instance person4 person
+set instance person5 person
+set instance person6 person
+set instance depot location
+set instance loc1 location
+set instance loc2 location
+set instance loc3 location
+set instance loc4 location
+set instance loc5 location
+set instance loc6 location
+set instance loc7 location          
+set instance box1 box
+set instance box2 box
+set instance box3 box
+set instance box4 box
+set instance xanax content
+set instance bendage content
+set instance banana content
+set instance pizza content
+set instance hammer content
+set instance carrier1 carrier 
+set instance capacity_0 capacity_number
+set instance capacity_1 capacity_number  
+set instance capacity_2 capacity_number  
+set instance capacity_3 capacity_number  
+set instance capacity_4 capacity_number  
+
+set predicate (capacity carrier1 capacity_4)
+set predicate (person_at person1 loc1)
+set predicate (person_at person2 loc3)
+set predicate (person_at person3 loc4)
+set predicate (person_at person4 loc7)
+set predicate (person_at person5 loc2)
+set predicate (person_at person6 loc6)
+set predicate (carrier_at carrier1 depot)
+set predicate (robot_at robot1 depot)
+set predicate (box_at box1 depot)
+set predicate (box_at box2 depot)
+set predicate (box_at box3 depot)
+set predicate (box_at box4 depot)
+set predicate (content_at xanax depot)
+set predicate (content_at bendage depot)
+set predicate (content_at banana depot)
+set predicate (content_at pizza depot)
+set predicate (content_at hammer depot)
+set predicate (capacity_predecessor capacity_0 capacity_1)
+set predicate (capacity_predecessor capacity_1 capacity_2)
+set predicate (capacity_predecessor capacity_2 capacity_3)
+set predicate (capacity_predecessor capacity_3 capacity_4)
+
+set goal (and (person_has person1 hammer) (person_has person2 banana) (person_has person3 xanax) (person_has person3 hammer) (person_has person5 bendage) (person_has person6 bendage) (person_has person6 pizza) (person_has person6 xanax))

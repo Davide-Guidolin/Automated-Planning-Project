@@ -1,0 +1,40 @@
+[0.022s] Invoking command in '/root/shared/problem5/problem5tfd/build/problem5tfd': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/shared/problem5/problem5tfd/build/problem5tfd -- -j8 -l8
+[0.081s] [35m[1mConsolidate compiler generated dependencies of target fill_action_node[0m
+[0.081s] [35m[1mConsolidate compiler generated dependencies of target unload_action_node[0m
+[0.088s] [35m[1mConsolidate compiler generated dependencies of target move_action_node[0m
+[0.089s] [35m[1mConsolidate compiler generated dependencies of target load_action_node[0m
+[0.089s] [35m[1mConsolidate compiler generated dependencies of target empty_action_node[0m
+[0.122s] [ 20%] Built target unload_action_node
+[0.125s] [ 40%] Built target load_action_node
+[0.126s] [ 60%] Built target fill_action_node
+[0.129s] [ 80%] Built target empty_action_node
+[0.129s] [100%] Built target move_action_node
+[0.144s] Invoked command in '/root/shared/problem5/problem5tfd/build/problem5tfd' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/shared/problem5/problem5tfd/build/problem5tfd -- -j8 -l8
+[0.215s] Invoking command in '/root/shared/problem5/problem5tfd/build/problem5tfd': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/shared/problem5/problem5tfd/build/problem5tfd
+[0.225s] -- Install configuration: ""
+[0.226s] -- Execute custom install script
+[0.226s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/share/problem5tfd/launch/commands
+[0.226s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/share/problem5tfd/launch/launcher.py
+[0.227s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/share/problem5tfd/pddl/domain.pddl
+[0.227s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/lib/problem5tfd/move_action_node
+[0.227s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/lib/problem5tfd/load_action_node
+[0.228s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/lib/problem5tfd/fill_action_node
+[0.228s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/lib/problem5tfd/empty_action_node
+[0.228s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/lib/problem5tfd/unload_action_node
+[0.229s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/share/ament_index/resource_index/package_run_dependencies/problem5tfd
+[0.229s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/share/ament_index/resource_index/parent_prefix_path/problem5tfd
+[0.230s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/share/problem5tfd/environment/ament_prefix_path.sh
+[0.230s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/share/problem5tfd/environment/ament_prefix_path.dsv
+[0.231s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/share/problem5tfd/environment/path.sh
+[0.231s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/share/problem5tfd/environment/path.dsv
+[0.232s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/share/problem5tfd/local_setup.bash
+[0.232s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/share/problem5tfd/local_setup.sh
+[0.233s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/share/problem5tfd/local_setup.zsh
+[0.233s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/share/problem5tfd/local_setup.dsv
+[0.233s] -- Symlinking: /root/shared/problem5/problem5tfd/install/problem5tfd/share/problem5tfd/package.dsv
+[0.244s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/share/ament_index/resource_index/packages/problem5tfd
+[0.244s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/share/problem5tfd/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.244s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/share/problem5tfd/cmake/problem5tfdConfig.cmake
+[0.244s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/share/problem5tfd/cmake/problem5tfdConfig-version.cmake
+[0.245s] -- Up-to-date symlink: /root/shared/problem5/problem5tfd/install/problem5tfd/share/problem5tfd/package.xml
+[0.247s] Invoked command in '/root/shared/problem5/problem5tfd/build/problem5tfd' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/shared/problem5/problem5tfd/build/problem5tfd

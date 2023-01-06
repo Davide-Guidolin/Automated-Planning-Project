@@ -1,0 +1,476 @@
+> get plan
+[plansys2_node-1] Parsing...
+[plansys2_node-1] Contains quantified condition(s): False
+[plansys2_node-1] Instantiating...
+[plansys2_node-1] Trivial rules: Converted to facts.
+[plansys2_node-1] Starting instantiation [53 rules]...
+[plansys2_node-1] Finding invariants...
+[plansys2_node-1] Finding invariants... 25 initial candidates
+[plansys2_node-1] [0.010s CPU, 0.009s wall-clock]
+[plansys2_node-1] Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+[plansys2_node-1] Instantiating groups...
+[plansys2_node-1] Choosing groups...
+[plansys2_node-1] 112 uncovered facts (before using the results from the invariant synthesis)
+[plansys2_node-1] 55 uncovered facts
+[plansys2_node-1] Building translation key...
+[plansys2_node-1] Building STRIPS to SAS dictionary...
+[plansys2_node-1] Translating task...
+[plansys2_node-1] Processing axioms...
+[plansys2_node-1] Found 0 axioms that are always true and 0 that are always false
+[plansys2_node-1] constrained 692 conditions
+[plansys2_node-1] Writing output...
+[plansys2_node-1] Done!
+[plansys2_node-1] contains_quantified_conditions: 0
+[plansys2_node-1] Building causal graph...
+[plansys2_node-1] The causal graph is not acyclic.
+[plansys2_node-1] 67 variables of 67 necessary
+[plansys2_node-1] 452 of 452 operators necessary.
+[plansys2_node-1] 0 of 0 Axiom_relational rules necessary.
+[plansys2_node-1] 0 of 0 Axiom_functional rules necessary.
+[plansys2_node-1] Building domain transition graphs...
+[plansys2_node-1] solveable in poly time 0
+[plansys2_node-1] Building successor generator...
+[plansys2_node-1] all_operator_indices.size(): 452
+[plansys2_node-1] Writing output...
+[plansys2_node-1] printing SG 
+[plansys2_node-1] 67
+[plansys2_node-1] done
+[plansys2_node-1] 
+[plansys2_node-1] 
+[plansys2_node-1] Planner Paramters:
+[plansys2_node-1] Anytime Search: Enabled
+[plansys2_node-1] Timeout if plan was found: 5 seconds
+[plansys2_node-1] Timeout while no plan was found: 10 seconds
+[plansys2_node-1] Greedy Search: Disabled
+[plansys2_node-1] Verbose: Enabled
+[plansys2_node-1] Lazy Heuristic Evaluation: Enabled
+[plansys2_node-1] Use caching in heuristic.
+[plansys2_node-1] Cyclic CG heuristic: Enabled  Preferred Operators: Enabled
+[plansys2_node-1] Makespan heuristic: Disabled  Preferred Operators: Disabled
+[plansys2_node-1] No Heuristic: Disabled
+[plansys2_node-1] Cg Heuristic Zero Cost Waiting Transitions: Enabled
+[plansys2_node-1] Cg Heuristic Fire Waiting Transitions Only If Local Problems Matches State: Disabled
+[plansys2_node-1] PrefOpsOrderedMode: Enabled with 1 goals
+[plansys2_node-1] PrefOpsCheapestMode: Enabled with 1 goals
+[plansys2_node-1] PrefOpsMostExpensiveMode: Disabled with 1000 goals
+[plansys2_node-1] PrefOpsRandMode: Disabled with 1000 goals
+[plansys2_node-1] PrefOpsConcurrentMode: Disabled
+[plansys2_node-1] Reset after solution was found: Disabled
+[plansys2_node-1] Reward only preferred operators queue: Disabled
+[plansys2_node-1] GValues by: Timestamp
+[plansys2_node-1] Queue management mode: Priority based
+[plansys2_node-1] Known by logical state only filtering: Disabled
+[plansys2_node-1] use_subgoals_to_break_makespan_ties: Disabled
+[plansys2_node-1] Reschedule plans: Enabled
+[plansys2_node-1] Epsilonize internally: Enabled
+[plansys2_node-1] Epsilonize externally: Disabled
+[plansys2_node-1] Keep original plans: Enabled
+[plansys2_node-1] Plan name: "/tmp///pddlplan"
+[plansys2_node-1] Plan monitor file: "" (no monitoring)
+[plansys2_node-1] Monitoring verify timestamps: Disabled
+[plansys2_node-1] 
+[plansys2_node-1] Contains universal conditions: 0
+[plansys2_node-1] INIT
+[plansys2_node-1] Open list sizes (priorities): 0 (0),  0 (0),  0 (0),  0 (0), 
+[plansys2_node-1] Initializing cyclic causal graph heuristic...done.
+[plansys2_node-1] Best heuristic values of queues: 352/-1/-1/-1 [expanded 1 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 346.98/-1/-1/-1 [expanded 2 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 342/-1/-1/-1 [expanded 3 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 337.98/-1/-1/-1 [expanded 4 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 334/-1/-1/-1 [expanded 5 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 317.98/-1/-1/-1 [expanded 85 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 308/-1/-1/-1 [expanded 86 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 307.98/-1/-1/-1 [expanded 87 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 303/-1/-1/-1 [expanded 88 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 297.98/-1/-1/-1 [expanded 89 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 294/-1/-1/-1 [expanded 90 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 273.98/-1/-1/-1 [expanded 108 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 264/-1/-1/-1 [expanded 109 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 263.98/-1/-1/-1 [expanded 110 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 259/-1/-1/-1 [expanded 111 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 255.98/-1/-1/-1 [expanded 112 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 252/-1/-1/-1 [expanded 113 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 219.98/-1/-1/-1 [expanded 133 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 210/-1/-1/-1 [expanded 134 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 205.98/-1/-1/-1 [expanded 141 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 202/-1/-1/-1 [expanded 142 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 185.98/-1/-1/-1 [expanded 158 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 176/-1/-1/-1 [expanded 159 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 171.98/-1/-1/-1 [expanded 161 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 168/-1/-1/-1 [expanded 162 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 135.98/-1/-1/-1 [expanded 184 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 126/-1/-1/-1 [expanded 185 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 111.98/-1/-1/-1 [expanded 188 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 109.99/-1/-1/-1 [expanded 189 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 108.98/-1/-1/-1 [expanded 218 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 99/-1/-1/-1 [expanded 219 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 98.98/-1/-1/-1 [expanded 220 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 97/-1/-1/-1 [expanded 221 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 90.98/-1/-1/-1 [expanded 222 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 88/-1/-1/-1 [expanded 223 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 87.98/-1/-1/-1 [expanded 224 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 84/-1/-1/-1 [expanded 225 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 77.98/-1/-1/-1 [expanded 226 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 75.99/-1/-1/-1 [expanded 231 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 61.98/-1/-1/-1 [expanded 247 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 52/-1/-1/-1 [expanded 248 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 51.98/-1/-1/-1 [expanded 249 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 50/-1/-1/-1 [expanded 250 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 46.98/-1/-1/-1 [expanded 251 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 44/-1/-1/-1 [expanded 252 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 43.98/-1/-1/-1 [expanded 254 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 42/-1/-1/-1 [expanded 256 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 41.99/-1/-1/-1 [expanded 260 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 39/-1/-1/-1 [expanded 269 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 38.98/-1/-1/-1 [expanded 272 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 35/-1/-1/-1 [expanded 273 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 28.98/-1/-1/-1 [expanded 274 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 14.98/-1/-1/-1 [expanded 276 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 5/-1/-1/-1 [expanded 277 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 4.98/-1/-1/-1 [expanded 278 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 3/-1/-1/-1 [expanded 279 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/-1/-1/-1 [expanded 281 state(s)]
+[plansys2_node-1] New solution has been found.
+[plansys2_node-1] 
+[plansys2_node-1] Found new plan:
+[plansys2_node-1] 0.00000000: (fill robot1 box1 hammer depot) [5.00000000]
+[plansys2_node-1] 5.01000000: (load robot1 depot box1 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 9.02000000: (move robot1 carrier1 depot loc1) [10.00000000]
+[plansys2_node-1] 19.03000000: (unload robot1 loc1 box1 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 21.04000000: (empty robot1 loc1 box1 hammer person1) [3.00000000]
+[plansys2_node-1] 24.05000000: (move robot1 carrier1 loc1 depot) [10.00000000]
+[plansys2_node-1] 34.06000000: (fill robot1 box4 banana depot) [5.00000000]
+[plansys2_node-1] 39.07000000: (load robot1 depot box4 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 43.08000000: (move robot1 carrier1 depot loc3) [10.00000000]
+[plansys2_node-1] 53.09000000: (unload robot1 loc3 box4 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 55.10000000: (empty robot1 loc3 box4 banana person2) [3.00000000]
+[plansys2_node-1] 58.11000000: (move robot1 carrier1 loc3 depot) [10.00000000]
+[plansys2_node-1] 68.12000000: (fill robot1 box3 hammer depot) [5.00000000]
+[plansys2_node-1] 73.13000000: (load robot1 depot box3 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 77.14000000: (move robot1 carrier1 depot loc4) [10.00000000]
+[plansys2_node-1] 87.15000000: (unload robot1 loc4 box3 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 89.16000000: (empty robot1 loc4 box3 hammer person3) [3.00000000]
+[plansys2_node-1] 92.17000000: (load robot1 loc4 box3 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 96.18000000: (move robot1 carrier1 loc4 depot) [10.00000000]
+[plansys2_node-1] 106.19000000: (unload robot1 depot box3 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 108.20000000: (fill robot1 box3 xanax depot) [5.00000000]
+[plansys2_node-1] 113.21000000: (load robot1 depot box3 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 117.22000000: (move robot1 carrier1 depot loc4) [10.00000000]
+[plansys2_node-1] 127.23000000: (unload robot1 loc4 box3 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 129.24000000: (empty robot1 loc4 box3 xanax person3) [3.00000000]
+[plansys2_node-1] 132.25000000: (move robot1 carrier1 loc4 loc2) [10.00000000]
+[plansys2_node-1] 142.26000000: (move robot1 carrier1 loc2 depot) [10.00000000]
+[plansys2_node-1] 152.27000000: (fill robot1 box2 bendage depot) [5.00000000]
+[plansys2_node-1] 157.28000000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 161.29000000: (move robot1 carrier1 depot loc2) [10.00000000]
+[plansys2_node-1] 171.30000000: (unload robot1 loc2 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 173.31000000: (empty robot1 loc2 box2 bendage person5) [3.00000000]
+[plansys2_node-1] 176.32000000: (load robot1 loc2 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 180.33000000: (move robot1 carrier1 loc2 depot) [10.00000000]
+[plansys2_node-1] 190.34000000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 192.35000000: (fill robot1 box2 bendage depot) [5.00000000]
+[plansys2_node-1] 197.36000000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 201.37000000: (move robot1 carrier1 depot loc6) [10.00000000]
+[plansys2_node-1] 211.38000000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 213.39000000: (empty robot1 loc6 box2 bendage person6) [3.00000000]
+[plansys2_node-1] 216.40000000: (load robot1 loc6 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 220.41000000: (move robot1 carrier1 loc6 depot) [10.00000000]
+[plansys2_node-1] 230.42000000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 232.43000000: (fill robot1 box2 pizza depot) [5.00000000]
+[plansys2_node-1] 237.44000000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 241.45000000: (move robot1 carrier1 depot loc6) [10.00000000]
+[plansys2_node-1] 251.46000000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 253.47000000: (empty robot1 loc6 box2 pizza person6) [3.00000000]
+[plansys2_node-1] 256.48000000: (load robot1 loc6 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 260.49000000: (move robot1 carrier1 loc6 depot) [10.00000000]
+[plansys2_node-1] 270.50000000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 272.51000000: (fill robot1 box2 xanax depot) [5.00000000]
+[plansys2_node-1] 277.52000000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 281.53000000: (move robot1 carrier1 depot loc6) [10.00000000]
+[plansys2_node-1] 291.54000000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 293.55000000: (empty robot1 loc6 box2 xanax person6) [3.00000000]
+[plansys2_node-1] Rescheduled Plan:
+[plansys2_node-1] 0.00100000: (fill robot1 box1 hammer depot) [5.00000000]
+[plansys2_node-1] 5.01100000: (load robot1 depot box1 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 9.02100000: (move robot1 carrier1 depot loc1) [10.00000000]
+[plansys2_node-1] 17.03100000: (unload robot1 loc1 box1 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 19.04100000: (empty robot1 loc1 box1 hammer person1) [3.00000000]
+[plansys2_node-1] 22.05100000: (move robot1 carrier1 loc1 depot) [10.00000000]
+[plansys2_node-1] 32.06100000: (fill robot1 box4 banana depot) [5.00000000]
+[plansys2_node-1] 37.07100000: (load robot1 depot box4 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 41.08100000: (move robot1 carrier1 depot loc3) [10.00000000]
+[plansys2_node-1] 49.09100000: (unload robot1 loc3 box4 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 51.10100000: (empty robot1 loc3 box4 banana person2) [3.00000000]
+[plansys2_node-1] 54.11100000: (move robot1 carrier1 loc3 depot) [10.00000000]
+[plansys2_node-1] 64.12100000: (fill robot1 box3 hammer depot) [5.00000000]
+[plansys2_node-1] 69.13100000: (load robot1 depot box3 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 73.14100000: (move robot1 carrier1 depot loc4) [10.00000000]
+[plansys2_node-1] 81.15100000: (unload robot1 loc4 box3 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 83.16100000: (empty robot1 loc4 box3 hammer person3) [3.00000000]
+[plansys2_node-1] 86.17100000: (load robot1 loc4 box3 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 90.18100000: (move robot1 carrier1 loc4 depot) [10.00000000]
+[plansys2_node-1] 98.19100000: (unload robot1 depot box3 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 100.20100000: (fill robot1 box3 xanax depot) [5.00000000]
+[plansys2_node-1] 105.21100000: (load robot1 depot box3 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 109.22100000: (move robot1 carrier1 depot loc4) [10.00000000]
+[plansys2_node-1] 117.23100000: (unload robot1 loc4 box3 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 119.24100000: (empty robot1 loc4 box3 xanax person3) [3.00000000]
+[plansys2_node-1] 122.25100000: (move robot1 carrier1 loc4 loc2) [10.00000000]
+[plansys2_node-1] 132.26100000: (move robot1 carrier1 loc2 depot) [10.00000000]
+[plansys2_node-1] 142.27100000: (fill robot1 box2 bendage depot) [5.00000000]
+[plansys2_node-1] 147.28100000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 151.29100000: (move robot1 carrier1 depot loc2) [10.00000000]
+[plansys2_node-1] 159.30100000: (unload robot1 loc2 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 161.31100000: (empty robot1 loc2 box2 bendage person5) [3.00000000]
+[plansys2_node-1] 164.32100000: (load robot1 loc2 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 168.33100000: (move robot1 carrier1 loc2 depot) [10.00000000]
+[plansys2_node-1] 176.34100000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 178.35100000: (fill robot1 box2 bendage depot) [5.00000000]
+[plansys2_node-1] 183.36100000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 187.37100000: (move robot1 carrier1 depot loc6) [10.00000000]
+[plansys2_node-1] 195.38100000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 197.39100000: (empty robot1 loc6 box2 bendage person6) [3.00000000]
+[plansys2_node-1] 200.40100000: (load robot1 loc6 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 204.41100000: (move robot1 carrier1 loc6 depot) [10.00000000]
+[plansys2_node-1] 212.42100000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 214.43100000: (fill robot1 box2 pizza depot) [5.00000000]
+[plansys2_node-1] 219.44100000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 223.45100000: (move robot1 carrier1 depot loc6) [10.00000000]
+[plansys2_node-1] 231.46100000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 233.47100000: (empty robot1 loc6 box2 pizza person6) [3.00000000]
+[plansys2_node-1] 236.48100000: (load robot1 loc6 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 240.49100000: (move robot1 carrier1 loc6 depot) [10.00000000]
+[plansys2_node-1] 248.50100000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 250.51100000: (fill robot1 box2 xanax depot) [5.00000000]
+[plansys2_node-1] 255.52100000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 259.53100000: (move robot1 carrier1 depot loc6) [10.00000000]
+[plansys2_node-1] 267.54100000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 269.55100000: (empty robot1 loc6 box2 xanax person6) [3.00000000]
+[plansys2_node-1] Solution with original makespan 296.55 found (ignoring no-moving-targets-rule).
+[plansys2_node-1] Plan length: 56 step(s).
+[plansys2_node-1] Makespan   : 272.551
+[plansys2_node-1] Rescheduled Makespan   : 272.551
+[plansys2_node-1] INIT
+[plansys2_node-1] Open list sizes (priorities): 84 (-56605),  479 (0),  922 (0),  1757 (0), 
+[plansys2_node-1] Best heuristic values of queues: 0/-1/-1/81.97 [expanded 18807 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/-1/-1/59.97 [expanded 18857 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/-1/-1/57.97 [expanded 19022 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/-1/-1/43.97 [expanded 19109 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/-1/-1/34 [expanded 19397 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/-1/-1/28.97 [expanded 21457 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/-1/-1/12.97 [expanded 21474 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/-1/-1/3 [expanded 22386 state(s)]
+[plansys2_node-1] New solution has been found.
+[plansys2_node-1] 
+[plansys2_node-1] Found new plan:
+[plansys2_node-1] 0.00000000: (fill robot1 box1 hammer depot) [5.00000000]
+[plansys2_node-1] 5.01000000: (load robot1 depot box1 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 9.02000000: (move robot1 carrier1 depot loc1) [10.00000000]
+[plansys2_node-1] 19.03000000: (unload robot1 loc1 box1 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 21.04000000: (empty robot1 loc1 box1 hammer person1) [3.00000000]
+[plansys2_node-1] 24.05000000: (move robot1 carrier1 loc1 depot) [10.00000000]
+[plansys2_node-1] 34.06000000: (fill robot1 box4 banana depot) [5.00000000]
+[plansys2_node-1] 39.07000000: (load robot1 depot box4 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 43.08000000: (move robot1 carrier1 depot loc3) [10.00000000]
+[plansys2_node-1] 53.09000000: (unload robot1 loc3 box4 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 55.10000000: (empty robot1 loc3 box4 banana person2) [3.00000000]
+[plansys2_node-1] 58.11000000: (move robot1 carrier1 loc3 depot) [10.00000000]
+[plansys2_node-1] 68.12000000: (fill robot1 box3 hammer depot) [5.00000000]
+[plansys2_node-1] 73.13000000: (load robot1 depot box3 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 77.14000000: (move robot1 carrier1 depot loc4) [10.00000000]
+[plansys2_node-1] 87.15000000: (unload robot1 loc4 box3 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 89.16000000: (empty robot1 loc4 box3 hammer person3) [3.00000000]
+[plansys2_node-1] 92.17000000: (move robot1 carrier1 loc4 depot) [10.00000000]
+[plansys2_node-1] 102.18000000: (fill robot1 box2 xanax depot) [5.00000000]
+[plansys2_node-1] 107.19000000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 111.20000000: (move robot1 carrier1 depot loc4) [10.00000000]
+[plansys2_node-1] 121.21000000: (unload robot1 loc4 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 123.22000000: (empty robot1 loc4 box2 xanax person3) [3.00000000]
+[plansys2_node-1] 126.23000000: (load robot1 loc4 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 130.24000000: (move robot1 carrier1 loc4 depot) [10.00000000]
+[plansys2_node-1] 130.25000000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 140.25000000: (fill robot1 box2 bendage depot) [5.00000000]
+[plansys2_node-1] 145.26000000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 149.27000000: (move robot1 carrier1 depot loc2) [10.00000000]
+[plansys2_node-1] 159.28000000: (unload robot1 loc2 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 161.29000000: (empty robot1 loc2 box2 bendage person5) [3.00000000]
+[plansys2_node-1] 164.30000000: (load robot1 loc2 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 168.31000000: (move robot1 carrier1 loc2 depot) [10.00000000]
+[plansys2_node-1] 168.32000000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 178.32000000: (fill robot1 box2 bendage depot) [5.00000000]
+[plansys2_node-1] 183.33000000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 187.34000000: (move robot1 carrier1 depot loc6) [10.00000000]
+[plansys2_node-1] 187.35000000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 197.35000000: (empty robot1 loc6 box2 bendage person6) [3.00000000]
+[plansys2_node-1] 200.36000000: (load robot1 loc6 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 204.37000000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 204.38000000: (move robot1 carrier1 loc6 depot) [10.00000000]
+[plansys2_node-1] 214.39000000: (fill robot1 box2 pizza depot) [5.00000000]
+[plansys2_node-1] 219.40000000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 223.41000000: (move robot1 carrier1 depot loc6) [10.00000000]
+[plansys2_node-1] 223.42000000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 233.42000000: (empty robot1 loc6 box2 pizza person6) [3.00000000]
+[plansys2_node-1] 236.43000000: (load robot1 loc6 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 240.44000000: (move robot1 carrier1 loc6 depot) [10.00000000]
+[plansys2_node-1] 240.45000000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 250.45000000: (fill robot1 box2 xanax depot) [5.00000000]
+[plansys2_node-1] 255.46000000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 259.47000000: (move robot1 carrier1 depot loc6) [10.00000000]
+[plansys2_node-1] 259.48000000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 269.48000000: (empty robot1 loc6 box2 xanax person6) [3.00000000]
+[plansys2_node-1] Rescheduled Plan:
+[plansys2_node-1] 0.00100000: (fill robot1 box1 hammer depot) [5.00000000]
+[plansys2_node-1] 5.01100000: (load robot1 depot box1 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 9.02100000: (move robot1 carrier1 depot loc1) [10.00000000]
+[plansys2_node-1] 17.03100000: (unload robot1 loc1 box1 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 19.04100000: (empty robot1 loc1 box1 hammer person1) [3.00000000]
+[plansys2_node-1] 22.05100000: (move robot1 carrier1 loc1 depot) [10.00000000]
+[plansys2_node-1] 32.06100000: (fill robot1 box4 banana depot) [5.00000000]
+[plansys2_node-1] 37.07100000: (load robot1 depot box4 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 41.08100000: (move robot1 carrier1 depot loc3) [10.00000000]
+[plansys2_node-1] 49.09100000: (unload robot1 loc3 box4 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 51.10100000: (empty robot1 loc3 box4 banana person2) [3.00000000]
+[plansys2_node-1] 54.11100000: (move robot1 carrier1 loc3 depot) [10.00000000]
+[plansys2_node-1] 64.12100000: (fill robot1 box3 hammer depot) [5.00000000]
+[plansys2_node-1] 69.13100000: (load robot1 depot box3 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 73.14100000: (move robot1 carrier1 depot loc4) [10.00000000]
+[plansys2_node-1] 81.15100000: (unload robot1 loc4 box3 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 83.16100000: (empty robot1 loc4 box3 hammer person3) [3.00000000]
+[plansys2_node-1] 86.17100000: (move robot1 carrier1 loc4 depot) [10.00000000]
+[plansys2_node-1] 96.18100000: (fill robot1 box2 xanax depot) [5.00000000]
+[plansys2_node-1] 101.19100000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 105.20100000: (move robot1 carrier1 depot loc4) [10.00000000]
+[plansys2_node-1] 113.21100000: (unload robot1 loc4 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 115.22100000: (empty robot1 loc4 box2 xanax person3) [3.00000000]
+[plansys2_node-1] 118.23100000: (load robot1 loc4 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 122.24200000: (move robot1 carrier1 loc4 depot) [10.00000000]
+[plansys2_node-1] 122.24100000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 132.25200000: (fill robot1 box2 bendage depot) [5.00000000]
+[plansys2_node-1] 137.26200000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 141.27200000: (move robot1 carrier1 depot loc2) [10.00000000]
+[plansys2_node-1] 149.28200000: (unload robot1 loc2 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 151.29200000: (empty robot1 loc2 box2 bendage person5) [3.00000000]
+[plansys2_node-1] 154.30200000: (load robot1 loc2 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 158.31200000: (move robot1 carrier1 loc2 depot) [10.00000000]
+[plansys2_node-1] 158.31300000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 168.32300000: (fill robot1 box2 bendage depot) [5.00000000]
+[plansys2_node-1] 173.33300000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 177.34300000: (move robot1 carrier1 depot loc6) [10.00000000]
+[plansys2_node-1] 177.34400000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 187.35400000: (empty robot1 loc6 box2 bendage person6) [3.00000000]
+[plansys2_node-1] 190.36400000: (load robot1 loc6 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 194.37400000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 194.37500000: (move robot1 carrier1 loc6 depot) [10.00000000]
+[plansys2_node-1] 204.38500000: (fill robot1 box2 pizza depot) [5.00000000]
+[plansys2_node-1] 209.39500000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 213.40500000: (move robot1 carrier1 depot loc6) [10.00000000]
+[plansys2_node-1] 213.40600000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 223.41600000: (empty robot1 loc6 box2 pizza person6) [3.00000000]
+[plansys2_node-1] 226.42600000: (load robot1 loc6 box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 230.43600000: (move robot1 carrier1 loc6 depot) [10.00000000]
+[plansys2_node-1] 230.43700000: (unload robot1 depot box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 240.44700000: (fill robot1 box2 xanax depot) [5.00000000]
+[plansys2_node-1] 245.45700000: (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4.00000000]
+[plansys2_node-1] 249.46700000: (move robot1 carrier1 depot loc6) [10.00000000]
+[plansys2_node-1] 249.46800000: (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4) [2.00000000]
+[plansys2_node-1] 259.47800000: (empty robot1 loc6 box2 xanax person6) [3.00000000]
+[plansys2_node-1] Solution with original makespan 272.48 found (ignoring no-moving-targets-rule).
+[plansys2_node-1] Plan length: 55 step(s).
+[plansys2_node-1] Makespan   : 262.478
+[plansys2_node-1] Rescheduled Makespan   : 262.478
+[plansys2_node-1] INIT
+[plansys2_node-1] Open list sizes (priorities): 0 (-13564),  43426 (7),  60525 (7),  121421 (-5885), 
+[plansys2_node-1] Best heuristic values of queues: 0/-1/55.98/3 [expanded 36937 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/68/55.98/3 [expanded 37175 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/52/55.98/3 [expanded 37222 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/50/55.98/3 [expanded 37223 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/44/55.98/3 [expanded 37240 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/42/55.98/3 [expanded 37241 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/34/55.98/3 [expanded 37243 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/34/52/3 [expanded 37276 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/34/47.98/3 [expanded 37322 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/34/42.98/3 [expanded 37325 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/34/42/3 [expanded 37602 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/34/41.99/3 [expanded 37608 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/34/39/3 [expanded 37617 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/34/38.98/3 [expanded 37737 state(s)]
+[plansys2_node-1] Best heuristic values of queues: 0/34/35/3 [expanded 37738 state(s)]
+[plansys2_node-1] 
+[plansys2_node-1] Search Time: 6 sec.
+[plansys2_node-1] Expanded Nodes: 37989 state(s).
+[plansys2_node-1] Rate: 6331.5 Nodes/s (over 6.0s) 6331.5 Nodes/s (total average)
+[plansys2_node-1] Generated Nodes: 356307 state(s).
+[plansys2_node-1] Rate: 59384.5 Nodes/s (over 6.0s) 59384.5 Nodes/s (total average)
+[plansys2_node-1] Overall branching factor by list sizes: 9.37922
+[plansys2_node-1] Averaged overall branching factor: Mean 9.38 Std: 6.83 (Num: 37987)
+[plansys2_node-1] Branching factors by open list:
+[plansys2_node-1] Open List 0: Mean 1.55 Std: 0.86 (Num: 37987)
+[plansys2_node-1] Open List 1: Mean 1.55 Std: 0.85 (Num: 37987)
+[plansys2_node-1] Open List 2: Mean 2.05 Std: 1.77 (Num: 37987)
+[plansys2_node-1] Open List 3: Mean 4.22 Std: 4.24 (Num: 37987)
+[plansys2_node-1] OpenList sizes: 1173 52145 68208 151646
+[plansys2_node-1] Heuristic Computations (per heuristic): 68084 Total: 68084
+[plansys2_node-1] Number of cache hits in heuristic (per heuristic): 45364 Total: 45364
+[plansys2_node-1] Best heuristic values of queues: [0: 0] [1: 34] [2: 35] [3: 3]
+[plansys2_node-1] 
+[plansys2_node-1] New solution has been found.
+[plansys2_node-1] Search time: 5.58 seconds - Walltime: 5.70581 seconds
+[plansys2_node-1] Total time: 5.59 seconds - Walltime: 5.71745 seconds
+plan: 
+0.001:  (fill robot1 box1 hammer depot) [5]
+5.011:  (load robot1 depot box1 carrier1 capacity_3 capacity_4) [4]
+9.021:  (move robot1 carrier1 depot loc1)       [10]
+17.031: (unload robot1 loc1 box1 carrier1 capacity_3 capacity_4)        [2]
+19.041: (empty robot1 loc1 box1 hammer person1) [3]
+22.051: (move robot1 carrier1 loc1 depot)       [10]
+32.061: (fill robot1 box4 banana depot) [5]
+37.071: (load robot1 depot box4 carrier1 capacity_3 capacity_4) [4]
+41.081: (move robot1 carrier1 depot loc3)       [10]
+49.091: (unload robot1 loc3 box4 carrier1 capacity_3 capacity_4)        [2]
+51.101: (empty robot1 loc3 box4 banana person2) [3]
+54.111: (move robot1 carrier1 loc3 depot)       [10]
+64.121: (fill robot1 box3 hammer depot) [5]
+69.131: (load robot1 depot box3 carrier1 capacity_3 capacity_4) [4]
+73.141: (move robot1 carrier1 depot loc4)       [10]
+81.151: (unload robot1 loc4 box3 carrier1 capacity_3 capacity_4)        [2]
+83.161: (empty robot1 loc4 box3 hammer person3) [3]
+86.171: (load robot1 loc4 box3 carrier1 capacity_3 capacity_4)  [4]
+90.181: (move robot1 carrier1 loc4 depot)       [10]
+98.191: (unload robot1 depot box3 carrier1 capacity_3 capacity_4)       [2]
+100.201:        (fill robot1 box3 xanax depot)  [5]
+105.211:        (load robot1 depot box3 carrier1 capacity_3 capacity_4) [4]
+109.221:        (move robot1 carrier1 depot loc4)       [10]
+117.231:        (unload robot1 loc4 box3 carrier1 capacity_3 capacity_4)        [2]
+119.241:        (empty robot1 loc4 box3 xanax person3)  [3]
+122.251:        (move robot1 carrier1 loc4 loc2)        [10]
+132.261:        (move robot1 carrier1 loc2 depot)       [10]
+142.271:        (fill robot1 box2 bendage depot)        [5]
+147.281:        (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4]
+151.291:        (move robot1 carrier1 depot loc2)       [10]
+159.301:        (unload robot1 loc2 box2 carrier1 capacity_3 capacity_4)        [2]
+161.311:        (empty robot1 loc2 box2 bendage person5)        [3]
+164.321:        (load robot1 loc2 box2 carrier1 capacity_3 capacity_4)  [4]
+168.331:        (move robot1 carrier1 loc2 depot)       [10]
+176.341:        (unload robot1 depot box2 carrier1 capacity_3 capacity_4)       [2]
+178.351:        (fill robot1 box2 bendage depot)        [5]
+183.361:        (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4]
+187.371:        (move robot1 carrier1 depot loc6)       [10]
+195.381:        (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4)        [2]
+197.391:        (empty robot1 loc6 box2 bendage person6)        [3]
+200.401:        (load robot1 loc6 box2 carrier1 capacity_3 capacity_4)  [4]
+204.411:        (move robot1 carrier1 loc6 depot)       [10]
+212.421:        (unload robot1 depot box2 carrier1 capacity_3 capacity_4)       [2]
+214.431:        (fill robot1 box2 pizza depot)  [5]
+219.441:        (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4]
+223.451:        (move robot1 carrier1 depot loc6)       [10]
+231.461:        (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4)        [2]
+233.471:        (empty robot1 loc6 box2 pizza person6)  [3]
+236.481:        (load robot1 loc6 box2 carrier1 capacity_3 capacity_4)  [4]
+240.491:        (move robot1 carrier1 loc6 depot)       [10]
+248.501:        (unload robot1 depot box2 carrier1 capacity_3 capacity_4)       [2]
+250.511:        (fill robot1 box2 xanax depot)  [5]
+255.521:        (load robot1 depot box2 carrier1 capacity_3 capacity_4) [4]
+259.531:        (move robot1 carrier1 depot loc6)       [10]
+267.541:        (unload robot1 loc6 box2 carrier1 capacity_3 capacity_4)        [2]
+269.551:        (empty robot1 loc6 box2 xanax person6)  [3]
+> 
