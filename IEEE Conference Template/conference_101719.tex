@@ -6,6 +6,7 @@
 \usepackage{algorithmic}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{url}
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
@@ -41,15 +42,13 @@ Marco Roveri}
 \input{problem3}
 \section{Problem 4}
 \input{problem4}
-
+\section{Problem 5}
+\input{problem5}
 
 \section{Appendix}
 \input{appendix}
-\begin{thebibliography}{00}
-\bibitem{Kharrazi} M. Kharrazi, H. T. Sencar and N. Memon, "Blind source camera identification," 2004 International Conference on Image Processing, 2004.
-\bibitem{Lukas} J. Lukas, J. Fridrich, and M. Goljan, “Digital camera identification from sensor pattern noise”.
-\bibitem{Bondi} L. Bondi, L. Baroffio, D. Guera, P. Bestagini, E. Delp, and S. Tubaro , "First Steps Toward Camera Model Identification with Convolutional Neural Networks".
-\bibitem{Mandelli} S. Mandelli, D. Cozzolino, P. Bestagini, L. Verdoliva and S. Tubaro, "CNN-Based Fast Source Device Identification"
-\end{thebibliography}
-\vspace{12pt}
+
+\bibliographystyle{ieeetr}
+\bibliography{mybib}
+
 \end{document}

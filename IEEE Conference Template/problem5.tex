@@ -1,0 +1,26 @@
+For solving problem 5 we were asked to implement problem 4 using PlanSys2 \cite{plansys2}.
+PlanSys2 is a software platform used to create, execute and monitor plans on a robotic agent. We used PlanSys2 inside the 
+Robot Operating System 2 (ROS2) \cite{ros2}.
+
+To implement the problem in PlanSys2 we started from a simple example \footnote{\url{https://github.com/PlanSys2/ros2_planning_system_examples/tree/master/plansys2_simple_example}} and we modified the necessary files that are:
+\begin{itemize}
+    \item \verb+launch/launcher.py+ \\ 
+    that contains the code to select the domain and run the executables that implement the PDDL actions. Here we only changed the names of the actions and the project name.
+    \item \verb+CMakeLists.txt+ and \verb+package.xml+ \\
+    in which we only had to change the project name
+    \item \verb+launch/commands+ \\
+    that contains the definition of the problem
+    \item \verb+pddl/domain.pddl+ \\
+    that contains the pddl domain
+    \item all the files in \verb+src/+ \\
+    that contain the implementation of the actions
+\end{itemize}
+
+Since we didn't have a real robot, we used fake actions that simulate the 
+behaviour of a robot by waiting for an appropriate amount of time before ending the action and by logging what the robot should do.
+
+PlanSys2 supports two planners: TFD \cite{tfd} and POPF \cite{popf}.
+We tried both the planners because POPF was slow in finding the plan and it 
+was stopped early inside the \verb+plansys2_terminal+ while TFD was able to find the plan faster but, since it isn't the default planner in PlanSys2 it required more work for the setup. Moreover POPF does not support the \verb+negative-preconditions+ requirement so the domain was slightly different from the one used in TFD.
+
+Regarding the TFD setup we had to modify the source code because PlanSys2 was not able to find the correct TFD path, however everything is explained in the Github repository.

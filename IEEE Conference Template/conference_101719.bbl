@@ -1,0 +1,20 @@
+\begin{thebibliography}{1}
+
+\bibitem{plansys2}
+F.~Martín, J.~Ginés, V.~Matellán, and F.~J. Rodríguez, ``Plansys2: A
+  planning system framework for ros2,'' 2021.
+
+\bibitem{ros2}
+S.~Macenski, T.~Foote, B.~Gerkey, C.~Lalancette, and W.~Woodall, ``Robot
+  operating system 2: Design, architecture, and uses in the wild,'' {\em
+  Science Robotics}, vol.~7, no.~66, p.~eabm6074, 2022.
+
+\bibitem{tfd}
+``Temporal fast downward.''
+  \url{http://gki.informatik.uni-freiburg.de/tools/tfd/}.
+
+\bibitem{popf}
+``Forward-chaining partial-order planning.''
+  \url{https://nms.kcl.ac.uk/planning/software/popf.html}.
+
+\end{thebibliography}
