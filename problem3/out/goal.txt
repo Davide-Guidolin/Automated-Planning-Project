@@ -1,9 +1,0 @@
-(and
-    (task1 (satisfy person2 banana))
-    (task2 (satisfy person3 xanax))
-    (task3 (satisfy person3 hammer))
-    (task4 (satisfy person5 bendage))
-    (task5 (satisfy person6 bendage))
-    (task6 (satisfy person6 pizza))
-    (task7 (satisfy person6 xanax))    
-)
