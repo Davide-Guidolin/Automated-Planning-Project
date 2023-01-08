@@ -3,7 +3,7 @@ ensuring that a robot can load the boxes on a carrier instead of itself, and tha
 The solution we developed are two, the first one is simpler since it only has an additional type \textbf{carrier} and its \textbf{capacity} is represented through a function.
 The initial capacity of each carrier can be specified in the problem, and it is managed through the usage of fluents: \textbf{load} can be performed only if the capacity is greater than 0, and the effect is to decrement it, the opposite for \textbf{unload}.\\
 Another solution has been implemented since the first one relies on the \textbf{fluents} requirement, which is not supported by many planner we used.
-We took inspiration by an example provided during the lab session, in which each a new type called \textbf{capacity-number} is used to described all the possible capacities.
+We took inspiration by an example provided during the lab session, in which a new type called \textbf{capacity-number} is used to described all the possible capacities.
 Then for each \textbf{load} and \textbf{unload} operation done on the carrier is important not to forget to specify the precondition \textbf{capacity-predecessor} through which we ensure the numbers we use to upload the capacity are consequent.
 The order of the capacity is specified in the problem as follows:
 \begin{verbatim}
