@@ -1,0 +1,5 @@
+(and
+    (person-has person2 medicine)
+    (person-has person3 food)
+    (person-has person3 medicine)
+)

@@ -1,0 +1,9 @@
+(and (person_has person1 hammer
+     (person_has person2 banana
+     (person_has person3 xanax
+     (person_has person3 hammer
+     (person_has person5 bendage
+     (person_has person6 bendage
+     (person_has person6 pizza
+     (person_has person6 xanax)
+     )
