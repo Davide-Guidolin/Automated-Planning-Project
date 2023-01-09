@@ -23,3 +23,5 @@ We tried both the planners because POPF was slow in finding the plan and it
 was stopped early inside the \verb+plansys2_terminal+ while TFD was able to find the plan faster but, since it isn't the default planner in PlanSys2 it required more work for the setup. Moreover POPF does not support the \verb+negative-preconditions+ requirement so the domain was slightly different from the one used in TFD.
 
 Regarding the TFD setup we had to modify the source code because PlanSys2 was not able to find the correct TFD path, however everything is explained in the Github repository \footnote{\url{https://github.com/Davide-Guidolin/Automated-Planning-Project}}.
+
+The problem definition is reported in \textit{Fig. \ref{problem5_problem}}, the obtained plan using POPF is reported in \textit{Fig. \ref{problem5_plan_popf}} while the obtained plan using TFD is reported in \textit{Fig. \ref{problem5_plan_tfd}}.
